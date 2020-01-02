@@ -1,0 +1,37 @@
+<view>
+  <view class="activity">
+    <view class="main-top">
+      <a class="poster-wrap">
+        <view class="video-play" style="background-size: 26px 26px; display: none;">
+          <video class="video"></video>
+        </view>
+        <image class='poster' src="https://img.piaoniu.com/poster/c29f239867f379e9ffb45cde62c053adaefe8b4a.jpg?imageView2/2/w/164/h/220/format/jpg/q/60"></image>
+      </a>
+      <view class="info">
+        <view class="title-line">
+          <a class="title">
+            <span class="city">[北京]</span>2019德云社北京相声大会——三里屯剧场</a>
+        </view>
+        <view class="time-address">
+          <span class="time">常年</span>
+          <span class="split">|</span>
+          <span class="address">德云社三里屯剧场</span>
+        </view>
+        <view class="rank" decode="{{true}}">评分\t;
+          <text>9.4</text>
+        </view>
+        <view class="price-wrap">
+          <view>
+            <span class="price">527</span>
+            <span class="qi">元起</span>
+          </view>
+          <view class="status-text"></view>
+        </view>
+        <view class="promotion-info">
+          <ul></ul>
+        </view>
+        <view class="light-spot">“听相声就听德云社”</view>
+      </view>
+    </view>
+  </view>
+</view>

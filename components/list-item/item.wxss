@@ -1,0 +1,83 @@
+.activity {
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+.main-top {
+    display: flex;
+    min-height: 125px;
+    position: relative;
+}
+a{
+  padding-top: 30rpx;
+  display: block;
+  width: 150rpx;
+  height: 200rpx;
+}
+.poster{
+  width: 100%;
+  height: 100%;
+}
+.info{
+  flex:1;
+  padding-top: 30rpx;
+  margin-left: 32rpx;
+}
+.title-line{
+    font-size: 30rpx;
+    color: #333;
+    max-height: 88rpx;
+    line-height: 44rpx;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+    font-weight: 600;
+}
+.title{
+  width: 100%;
+  padding: 0;
+}
+.time-address {
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 18rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.split {
+    margin: 0 8rpx;
+}
+.rank {
+  font-size: 20rpx;
+  color: #999;
+  margin-top: 8rpx;
+  margin-bottom: 32rpx;
+}
+.rank text{
+  font-size: 24rpx;
+  font-weight: 700;
+  color: #ffb02e;
+}
+.price-wrap {
+  margin-bottom: 20rpx;
+}
+.price{
+  color: #ff2661;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-right: 8rpx;
+}
+.qi{
+  font-size: 20rpx;
+  color: #999;
+}
+.light-spot {
+  font-size: 24rpx;
+  color: #999;
+  padding: 28rpx 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-top: 1rpx solid hsla(0,0%,90%,.5);
+}
