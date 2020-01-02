@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/mine/mine",
     "pages/index/index",
     "pages/list/list",
-    "pages/find/find",
-    "pages/mine/mine"
+    "pages/find/find"
   ],
 
   "window": {
