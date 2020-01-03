@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "find-header":"/components/find-header/find-header"
+  },
+  "navigationBarTitleText": "发现"
 }

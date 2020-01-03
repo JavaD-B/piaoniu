@@ -1,0 +1,9 @@
+<view class="header">
+  <view class="header-container">
+    <view class="tag-item {{tag==='hot'?'active':''}}">热门</view>
+    <view class="tag-item {{tag==='follow'?'active':''}}">关注</view>
+  </view>
+  <view class="add-circles">
+    <image src="/source/add-circles.png"></image>
+  </view>
+</view>

@@ -1,2 +1,1 @@
-<!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<find-header></find-header>
