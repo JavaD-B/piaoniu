@@ -1,0 +1,47 @@
+/* pages/index/topbar/topbar.wxss */
+.topbar{
+  display: flex;
+}
+.city-picker{
+    display: block;
+    width: 55rpx;
+    padding: 15rpx 20rpx 0 0rpx;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    color: #262626;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAiUlEQVQYV32OsQ0CMRAE9ywCp9+AMx8uAfJPoBRo56EUSD6HEsw5cwOfOrLRoQcBEmxyu6vR6oiZBwB7/NeBACyY+Qyg/8GOIrJREM65zlp7AbD8gm+llHXOeXqAqhAC11qvALq5mowxqxijaH6BGrz3PRGd1LfWtiml8Tn0AWrJzDu9InJ8f+MOa9AlEd8hxgYAAAAASUVORK5CYII=");
+    background-size: 10rpx 6rpx;
+    font-weight: 550;
+    font-size: 26rpx;
+    margin-right: 9rpx;
+}
+.search-cont{
+  position: relative;
+  width: 540rpx;
+  margin-left: 30rpx;
+  height:68rpx;
+  border-radius: 30rpx;
+  line-height: 68rpx;
+  background-color: #f5f5f5;
+}
+.search-icon{
+  width: 32rpx;
+  height: 32rpx;
+  background: url('https://static.piaoniu.com/nuxt-static/img/search-dark.8a69379.png');
+  background-size: 32rpx 32rpx;
+  position: absolute;
+  top: 17rpx;
+  left: 20rpx;
+}
+.placeholder{
+  position: absolute;
+  left: 80rpx;
+  height:68rpx;
+  color: #b0b0b0;
+  line-height: 68rpx;
+}
+.search-input{
+  height: 68rpx;
+line-height: 68rpx;
+margin-left: 60rpx;
+}

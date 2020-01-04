@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tag:"hot"
+    tag:"hot",
+    bannerData:[]
   },
 
   /**
@@ -19,7 +20,15 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.request({
+      url: 'https://api.piaoniu.com/v1/feed/banner',
+      method:'get',
+      success:(res)=>{
+        this.setData({
+          bannerData:res.data
+        })
+      }
+    })
   },
 
   /**

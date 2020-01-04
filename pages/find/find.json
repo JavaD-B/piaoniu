@@ -1,7 +1,8 @@
 {
   "usingComponents": {
-    "find-header":"/components/find-header/find-header"
+    "find-header":"/components/find-header/find-header",
+    "find-banner":"/components/find-banner/find-banner",
+    "find-campaigns":"/components/find-campaigns/find-campaigns"
   },
-  "usingComponents": {},
   "navigationBarTitleText": "发现"
 }

@@ -1,2 +1,6 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="index-cont">
+<topbar/>
+<banner/>
+<category/>
+</view>

@@ -1,10 +1,10 @@
-// components/find-banner/find-banner.js
+// components/banner/banner.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    banner:Array
+
   },
 
   /**

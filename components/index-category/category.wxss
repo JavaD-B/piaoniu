@@ -1,0 +1,13 @@
+.category-cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-item{
+  width: 124rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+.item-icon{
+  width: 84rpx;
+  height: 84rpx;
+}
