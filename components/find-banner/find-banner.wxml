@@ -1,2 +1,14 @@
-<!--components/find-banner/find-banner.wxml-->
-
+<swiper
+  indicator-dots
+  indicator-color="#666"
+  indicator-active-color="#fff"
+  autoplay="true"
+  class="find-banner-wrap"
+>
+<swiper-item
+  wx:for="{{banner}}"
+  wx:key="{{item.id}}"
+>
+  <image src="{{item.poster}}" class="find-banner"></image>
+</swiper-item>
+</swiper>
