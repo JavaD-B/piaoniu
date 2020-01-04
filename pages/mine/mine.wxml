@@ -1,2 +1,74 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="mine">
+  <view class="login">
+    <view class="avatar"></view>
+    <view class="click-login">点击登录</view>
+  </view>
+  <view class="my-order">
+    <view class="order-row">
+      <view class="order-text">我的订单</view>
+      <view class="order-hint">查看全部订单</view>
+      <view class="order-arrow"></view>
+    </view>
+  </view>
+  <view class="tbv-section">
+    <view class="orders">
+      <view class="item">
+        <view class="icon icon-topay">
+          <view class="badge" style="display: none;">0</view>
+        </view>
+        <view class="text">待付款</view>
+      </view>
+      <view class="item">
+        <view class="icon icon-tosend">
+          <view class="badge" style="display: none;">0</view>
+        </view>
+        <view class="text">待发货</view>
+      </view>
+      <view class="item">
+        <view class="icon icon-toreceive">
+          <view class="badge" style="display: none;">0</view>
+        </view>
+        <view class="text">待收货</view>
+      </view>
+    </view>
+  </view>
+  <view class="tbv-section welfare-section">
+    <view class="tbv-row welfare-title border-bottom">
+      <view class="row-text">我的福利</view>
+    </view>
+    <view class="tbv-row welfare-content">
+      <view class="welfare-item">
+        <view class="icon-wrap icon-redPackage"></view>
+        <view class="info">
+          <view class="title">邀请好友</view>
+          <view class="desc">返10元现金</view>
+        </view>
+      </view>
+      <view class="welfare-item">
+        <view class="icon-wrap icon-club"></view>
+        <view class="info">
+          <view class="title">圈圈俱乐部</view>
+          <view class="desc">达人专属奖励</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="sel-row border-bottom">
+      <view class="row-text">地址管理</view>
+      <view class="row-arrow"></view>
+    </view>
+    <view class="sel-row border-bottom">
+      <view class="row-text">帮助与客服</view>
+      <view class="row-arrow"></view>
+    </view>
+    <view class="sel-row border-bottom">
+      <view class="row-text">隐私协议</view>
+      <view class="row-arrow"></view>
+    </view>
+    <view class="sel-row">
+      <view class="row-text">卖家招募</view>
+      <view class="row-arrow"></view>
+    </view>
+  </view>
+</view>

@@ -1,16 +1,17 @@
 {
   "pages": [
+    "pages/find/find",
     "pages/index/index",
     "pages/list/list",
-    "pages/find/find",
     "pages/mine/mine"
   ],
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
   },
+  
   "tabBar":{
     "list":[{
       "pagePath":"pages/index/index",

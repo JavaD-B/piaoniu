@@ -1,1 +1,252 @@
 /* pages/mine/mine.wxss */
+
+.mine {
+  height: 100%;
+  background: rgb(246,247,248)
+}
+
+/* login */
+.login {
+  height: 172px;
+  width: 100%;
+  background: linear-gradient(270deg, #ff5aa5 0%, #ff2661 100%);
+  position: relative;
+}
+
+.login .avatar {
+  background-image: url(https://static.piaoniu.com/m/static/img/defaultAvatar.99f8eed.png);
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 18px;
+  top: 58px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.login .click-login {
+  position: absolute;
+  left: 92px;
+  margin-top: 72px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* my-order */
+.my-order {
+  line-height: 45px;
+  margin-left: 19px;
+  position: relative;
+  background: #fff;
+}
+
+.order-row {
+  height: 45px;
+}
+
+.my-order::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #f5f5f5;
+  color: #f5f5f5;
+  transform-origin: 0 100%;
+  transform: scaleY(.5);
+  z-index: 2;
+}
+
+.order-text {
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+}
+
+.order-hint {
+  position: absolute;
+  right: 34px;
+  font-size: 16px;
+  color: #999;
+}
+
+.order-arrow {
+  width: 6px;
+  height: 12px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAAXNSR0IArs4c6QAAAelJREFUOBGlkz8sA3EUx3tXmtygq0iF4bqxIhZJB4OzEZVIJPpPxGJBLN0M/iwWg1ybdqgYMBCDECmRECaLrYvFzKSC1uc1V9Fry5WXvHv3+733+X1/v/e7c7n+aolE4grvbJRXi8ViP9ANcG8jsKooyilwK36eTCZHncKqrusGsAmgAe8CLziBlXIRW13kfQWYdRSTBWcDgcB7OW+PX6AkTNMcIWRwTY7g9XrHgsHgs+TsVgFK0mrSoZyb4T0LDEej0Qc7qNonKLplrk8gvAuv2fEqRQpLlslkvPl8fg/lQSZeVFWdjEQi+1baVReUgmw225TL5TZ5nWbLReISO1qT3I+gFIjJFaG8+r3jjkCB7R2vao4U1TJN06Rpj1auwxGYTqd1GnUJpON3Ho9n4Netcq/dnO0EoI0GXbvdbiMUCj39qJhKpXoALizoDKVBgRjX7ypKA+SPUGshHvh8vnHDMF4FEqu5Vdo/VCgU5LI1fNvv90/ZP/gqEKUxVLYBmjnTFl/LLLHAuMIqzshdhcju4M34Ol/JTC1IVvgCUZqjKImamxiPxWLyf9a1EohSHGDDqppDabkuYSUUlNaB5lH5wKOcKf0bJPkmgYhv/DYT4XB4zwlUAnm8oDQCdOwUKtXxw7Y3BPy3+BNA/bpVQOxGjAAAAABJRU5ErkJggg==);
+  background-size: 6px 12px;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
+
+.tbv-section {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.tbv-section .orders{
+  display: flex;
+  height: 68px;
+}
+
+.orders .item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.orders .item .icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  margin-bottom: 8px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+
+.orders .icon-topay {
+  background-image: url(https://static.piaoniu.com/m/static/img/order-topay.4cf62ce.png);
+}
+
+.orders .icon-tosend {
+  background-image: url(https://static.piaoniu.com/m/static/img/order-tosend.20248ed.png);
+}
+
+.orders .icon-toreceive {
+  background-image: url(https://static.piaoniu.com/m/static/img/order-toreceive.d23cc4e.png);
+}
+
+.orders .item .text {
+  font-size: 12px;
+  color: #666;
+}
+
+/* welfare */
+.tbv-section {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.tbv-section .tbv-row.welfare-title {
+  margin-left: 0;
+  padding-left: 19px;
+  height: 39px;
+}
+
+.tbv-section .tbv-row.welfare-title .row-text {
+  left: 19px;
+  line-height: 39px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+border-bottom:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #f5f5f5;
+  color: #f5f5f5;
+  transform-origin: 0 100%;
+  transform: scaleY(.5);
+  z-index: 2;
+}
+
+.tbv-section .tbv-row.welfare-content {
+  margin-left: 0;
+  height: 79px;
+  display: flex;
+}
+
+.welfare-content .welfare-item {
+  flex: 1;
+  position: relative;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
+.welfare-content .welfare-item .icon-wrap {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  background-size: 48px 48px;
+}
+
+.welfare-content .welfare-item .icon-wrap.icon-redPackage {
+  background-image: url(https://static.piaoniu.com/m/static/img/icon-redpackage.e078ab8.png);
+}
+
+.welfare-content .welfare-item .icon-wrap.icon-club {
+  background-image: url(https://static.piaoniu.com/m/static/img/icon-club.959250b.png);
+}
+
+.welfare-content .welfare-item .info {
+  margin-left: 58px;
+}
+
+.welfare-content .welfare-item .info .title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 9px;
+  color: #262626;
+}
+
+.welfare-content .welfare-item .info .desc {
+  font-size: 11px;
+  color: #999;
+}
+
+/* selection */
+.section {
+  background: #fff;
+}
+
+.section .sel-row {
+  position: relative;
+  margin-left: 19px;
+  height: 44px;
+}
+
+.border-bottom:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #f5f5f5;
+  color: #f5f5f5;
+  transform-origin: 0 100%;
+  transform: scaleY(.5);
+  z-index: 2;
+}
+
+.sel-row .row-text {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  line-height: 44px;
+}
+
+.row-contain .row-arrow, .tbv-row .row-arrow {
+  width: 6px;
+  height: 12px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAAAAXNSR0IArs4c6QAAAelJREFUOBGlkz8sA3EUx3tXmtygq0iF4bqxIhZJB4OzEZVIJPpPxGJBLN0M/iwWg1ybdqgYMBCDECmRECaLrYvFzKSC1uc1V9Fry5WXvHv3+733+X1/v/e7c7n+aolE4grvbJRXi8ViP9ANcG8jsKooyilwK36eTCZHncKqrusGsAmgAe8CLziBlXIRW13kfQWYdRSTBWcDgcB7OW+PX6AkTNMcIWRwTY7g9XrHgsHgs+TsVgFK0mrSoZyb4T0LDEej0Qc7qNonKLplrk8gvAuv2fEqRQpLlslkvPl8fg/lQSZeVFWdjEQi+1baVReUgmw225TL5TZ5nWbLReISO1qT3I+gFIjJFaG8+r3jjkCB7R2vao4U1TJN06Rpj1auwxGYTqd1GnUJpON3Ho9n4Netcq/dnO0EoI0GXbvdbiMUCj39qJhKpXoALizoDKVBgRjX7ypKA+SPUGshHvh8vnHDMF4FEqu5Vdo/VCgU5LI1fNvv90/ZP/gqEKUxVLYBmjnTFl/LLLHAuMIqzshdhcju4M34Ol/JTC1IVvgCUZqjKImamxiPxWLyf9a1EohSHGDDqppDabkuYSUUlNaB5lH5wKOcKf0bJPkmgYhv/DYT4XB4zwlUAnm8oDQCdOwUKtXxw7Y3BPy3+BNA/bpVQOxGjAAAAABJRU5ErkJggg==);
+  background-size: 6px 12px;
+  right: 15px;
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+}

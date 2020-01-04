@@ -1,2 +1,3 @@
-<!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<find-header></find-header>
+<find-banner banner="{{bannerData[0].banners}}"></find-banner>
+<find-campaigns campaigns="{{bannerData[1].campaigns}}"></find-campaigns>
