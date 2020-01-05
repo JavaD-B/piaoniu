@@ -1,5 +1,8 @@
+
 {
+  "navigationBarTitleText": "演出",
   "usingComponents":{
-    "item":"/components/list-item/item"
+    "item":"/components/list-item/item",
+    "tarbar":"/components/list-tarbar/tarbar"
   }
 }

@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+
+  "usingComponents": {
+    "topbar":"/components/index-topbar/topbar",
+    "banner":"/components/index-banner/banner",
+    "category":"/components/index-category/category"
+  },
+  "navigationBarTitleText": "首页"
 }

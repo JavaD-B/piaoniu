@@ -1,0 +1,10 @@
+<!--components/index-category/category.wxml-->
+<view class="category-cont">
+<view class="category-item">
+<image
+src="http://assets.piaoniu.com/home/icons/category-sports-large.png" 
+class="item-icon"
+></image>
+<view class="item-name">体育赛事</view>
+</view>
+</view>

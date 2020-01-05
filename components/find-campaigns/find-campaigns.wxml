@@ -1,0 +1,10 @@
+<view class="find-campaigns-wrap">
+  <view
+    wx:for="{{campaigns}}"
+    class="find-campaigns-item"
+    style="background-image:url('{{item.backgroundImg}}');"
+  >
+    <view class="item-title">{{item.title}}</view>
+    <view class="item-content">{{item.content}}</view>
+  </view>
+</view>

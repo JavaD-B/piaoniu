@@ -1,0 +1,8 @@
+<!--pages/index/topbar/topbar.wxml-->
+<view class="topbar">
+<view class="city-picker">北京</view>
+<view class="search-cont">
+<view class="search-icon"></view>
+<input class="search-input" placeholder="搜索明星、演出、场馆"></input>
+</view>
+</view>

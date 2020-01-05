@@ -1,0 +1,9 @@
+.find-banner-wrap{
+  width:100%;
+  height:200rpx;
+}
+
+.find-banner{
+  width:100%;
+  height:200rpx;
+}

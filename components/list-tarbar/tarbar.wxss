@@ -1,0 +1,28 @@
+/* components/list-tarbar/tarbar.wxss */
+
+.contain{
+  display:flex;
+  width: fit-content;
+}
+.contain .item{
+  display: inline-block;
+  padding:0 34rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  text-align:center;
+  line-height: 100rpx;
+  flex-shrink: 0;
+}
+.contain .active{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.contain .active::after{
+  content: '';
+  display: block;
+  height: 6rpx;
+  transform:scale(0.5,1);
+  transform-origin: 50% 0;
+  width: 140rpx;
+  background: red;
+}
