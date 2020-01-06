@@ -12,6 +12,15 @@ Component({
       wx.setNavigationBarTitle({
         title: '演出详情'
       })
+
+      wx.request({
+        url: 'https://api.piaoniu.com/v1/activityPageDetail?activityId=130267&mweb=false&supportSpeedPackBuy=true',
+        success:  (res) => {
+          this.setData({
+            detailData: res.data
+          })
+        }
+      })
     }
   },
 
@@ -19,7 +28,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    detailData: {}
   },
 
   /**

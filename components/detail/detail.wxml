@@ -85,7 +85,7 @@
 
   <view class="sections">
     <view class="buy-note">
-      <text>balabala</text>
+      <text>{{detailData.creditPayDesc}}</text>
     </view>
 
     <view class="introduce">
