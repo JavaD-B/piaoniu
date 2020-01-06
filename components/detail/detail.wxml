@@ -1,0 +1,113 @@
+<view class="detail">
+  <view class="header">
+    <view class="header-image" style="height: 210px;">
+      <canvas id="blured-poster" style="width: 375px; height: 280px;" width="375" height="280"></canvas>
+    </view>
+
+    <view class="header-main">
+      <image src="https://img.piaoniu.com/poster/e95b31823370879f5a694253e2807f03a504ee4a.jpg?imageView2/2/w/208/h/280" class="poster" />
+      <view class="info">
+        <view class="top">
+          <view class="title">里马斯·图米纳斯执导话剧《浮士德》官方周边商品【DM】</view>
+          <view class="stars-score">
+            <text class="score">暂无评分</text>
+            <view class="stars">
+              <view>
+                <image src="https://static.piaoniu.com/nuxt-static/img/starYellow.b0a4b5a.png" />
+              </view>
+              <view>
+                <image src="https://static.piaoniu.com/nuxt-static/img/starYellow.b0a4b5a.png" />
+              </view>
+              <view>
+                <image src="https://static.piaoniu.com/nuxt-static/img/starYellow.b0a4b5a.png" />
+              </view>
+              <view>
+                <image src="https://static.piaoniu.com/nuxt-static/img/starYellow.b0a4b5a.png" />
+              </view>
+              <view>
+                <image src="https://static.piaoniu.com/nuxt-static/img/starGrey.eefc1c0.png" />
+              </view>
+            </view>
+          </view>
+          <view class="price-viewne">
+            <view class="price-info">
+              <text class="price">28</text>
+              <text class="qi">元起</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="concern-comment">
+        <view class="comment">
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWBJREFUSA3tlr1OAkEUhcHAAygkavhp6Qy1vQUvxwOQWKKJD2DNE0AUCimsiFsYY2iM5fidZTbhL+wgXCCBk3yZmZ2798wdZslkMsg5V4ZHiMBKyi2PsjyzvvNC/0IPdqBvPG5UbRukZ4hXY2Gu3N6DxrVl/KEeqlgYTueUR+yEp7baaTKLpoOs+onfmZVBWt6TcdoObW3+8Laa09eAkacxX+qm8/qOYy1JLNNEo23NJwn3ttWrKjbZ6qTi0z/X/BkyG+/tcB2ncaQfkmO+k4uAPzSRtrrjBy3MLa8+KqzlvTqqtARfEKImQUtvKjxXnveAJPIqxQugo4vYA4Rcb++JmzmUjC/hDVZJdzt5TEx96akNL9zBD0hPkNdLtAXog9SD89Rk6waQ9BbGIOk6fA1dDdAAiuvmDI4neR0+QfqdNG5IexWc5L+BmNRAZtIrmH0NC2vELAdVmDloC4GH9uAPVr2hcd5RxioAAAAASUVORK5CYII="
+          />
+          <text>评论</text>
+        </view>
+        <view class="concern">
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAAAXNSR0IArs4c6QAAAppJREFUSA3Nlk2IjWEUx+/MhGTufNgo2WjKisQCU7KYBQtZ+EjKjIRiNFMTC5nNLFgMiVIWiiUTKzaUnVIsLCQuG4kFWfgsM2S4fv/XOa97n3mfe++Md8qp333Ocz7+5973vl+FQmDlcnkFnIUn8Am+wlM4A4uC8nRLrgtOwWNQ3xcowXlYmRaGDskWkPgkxOwziYGM3mPEv8WaiP+Ec9BS1UugCcbA7TJON7RBJ6yHKyAB2QkXwB9NIn8+rrNsgcXQCmvgIrhdw2ny3gKbAcvo8OxME4FDbhtMWO0e1q3mf2ftDcrTLbntoKMlG0wSOEXwYF9aHXGo3Qeyj/Am8TIOf9hOXa/ValZRv7bfAg9Z/x6GsLNiT13l33KnIhV1pQ2aITuswTcSl18S7QoS1M+DgzAI7UE6uqXWj9ZNDX4NsnXRjpwSmpFMYqYG+8nSkZN+VIZZHTZ4opmqcassRjvyS7SaVDK4ZJvu/PSjSmstU9KhHrKffz9anlOCOXdt1lEN1t3pgwU25zRjigz6PTZD13FnUoBzxII6w3M/ydBcAC9sxnD6rQjoAfHAErquG7qRpAJ1HPSumvYj1jlV5QSWwFsrGK1K/sMGveOm+Z61K1OKhC5wf7yNZBZNI4jWfpD9gJ6arRTshl8gm/FwevvAH6P9NYd6koa9FU3THk7vIfAvP+S6Da006jE2CbJLMLdeIzXNcBrcpryt1NNI8nTvAL+X38Ov9c7VTv4WyPSfHmhoSKwIAZ1w70Cm63x1WEtsGTwHmW4QG8OaGe0RWgp665SNwy4Xwt8EehuRvYTlnstlRVB3nzFwu4BzEvzMvY2/MJdhWSKI661DL3duGjwCesTOrjFkFTyDV7BhdqcF6gycD21B+P/f/gatkZ1laeTSrAAAAABJRU5ErkJggg=="
+          />
+          <text>想看</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="header-bottom">
+      <view class="time-range" style="display:;">2020.03.11 - 03.15</view>
+      <view class="venue" bindtap="mapcheck">
+        <view class="inner">
+          <view class="name">天桥艺术中心大剧场</view>
+        </view>
+        <view class="icon">
+          <image src="https://static.piaoniu.com/nuxt-static/img/icon-park2.c5fced0.png" />
+        </view>
+      </view>
+      <view class="service-info">
+        <view class="text">平台保障</view>
+        <view class="service-item">
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACnElEQVRIS72W0UsUURTGv3N3dnsLTactKSTSkAyjqJmIiKDHoCgQKowIctdapR5868U/wIdCzV0NhJLoKSmo6C16kFyjJcsSEkKRoJ1tfYmondl7YmabZdZ2dRay+3rPfL97vnvuOUNYZX3TL2/LQ5wiiBPM3AZGvRNOyBDRDEM+CUA+qpu6s1RJhsptGPu6GxCy+sB8iQGFgQ8A3oL4ixPP1ABgLwG7CbBANIac0qemBgv7nvUXwDjQeZIFjQMUJOIhNpX45je358sdJL3/ahMFrS5migFskuQO9fXo44qAjBbtkYybIEoGlcDZ2smhhdUsdPeWD8caTSv/AMyaIFyvTyYG3L1iBs7JSUyA8FDNhjpofuCXH3E3hpt6NhibcuNgnCGWp91MHIDtOQdzc4CYVbPBY9WKl0LMF4BsJTPUYt9JAaB3jTDzhaCptNSm/NlSKbuCXdYcEd1Tp+IRsktRcuAziG+pUyO91djiFBTaA4ZeczH0Q5moeTe8XDhwpB9M1wTld1Baj8TANAgr0FypWipBbfGMVneXIc8x85Hw9OikHWtXF5T8JxB3U1qLPiNgu5pM7Knm9F5xIUSs/lV82Pu9oUXfg2jRBiwx8DKcTJz3C1hL3Nb5qkXvE3CU0gejP1nwYNjjv6F17mKIG3kz17s1NWZ4wX7EHYAe6SdJ3WUBaT3aDMY0CIv5XO64C/ErXgqoYFHmUEyX0nruQrakvmfdCy3n+Up7ixYZetdTydwYTiZaVwZ5IWD6CMh2P+J/7mBWEC2sWaZFCHijX/GSMvXz0LL6lTaTeWc4GZ/wU2klD62kVShKi98O6rtV/Jdm50DWs1276a7rwHEh6zoyi5AVQ5+AWQnMeIe+ANoYaK166Hur41/8tvwG+pnapsUnZS8AAAAASUVORK5CYII="
+          />
+          <text>无票赔付</text>
+        </view>
+        <view class="service-item">
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACnElEQVRIS72W0UsUURTGv3N3dnsLTactKSTSkAyjqJmIiKDHoCgQKowIctdapR5868U/wIdCzV0NhJLoKSmo6C16kFyjJcsSEkKRoJ1tfYmondl7YmabZdZ2dRay+3rPfL97vnvuOUNYZX3TL2/LQ5wiiBPM3AZGvRNOyBDRDEM+CUA+qpu6s1RJhsptGPu6GxCy+sB8iQGFgQ8A3oL4ixPP1ABgLwG7CbBANIac0qemBgv7nvUXwDjQeZIFjQMUJOIhNpX45je358sdJL3/ahMFrS5migFskuQO9fXo44qAjBbtkYybIEoGlcDZ2smhhdUsdPeWD8caTSv/AMyaIFyvTyYG3L1iBs7JSUyA8FDNhjpofuCXH3E3hpt6NhibcuNgnCGWp91MHIDtOQdzc4CYVbPBY9WKl0LMF4BsJTPUYt9JAaB3jTDzhaCptNSm/NlSKbuCXdYcEd1Tp+IRsktRcuAziG+pUyO91djiFBTaA4ZeczH0Q5moeTe8XDhwpB9M1wTld1Baj8TANAgr0FypWipBbfGMVneXIc8x85Hw9OikHWtXF5T8JxB3U1qLPiNgu5pM7Knm9F5xIUSs/lV82Pu9oUXfg2jRBiwx8DKcTJz3C1hL3Nb5qkXvE3CU0gejP1nwYNjjv6F17mKIG3kz17s1NWZ4wX7EHYAe6SdJ3WUBaT3aDMY0CIv5XO64C/ErXgqoYFHmUEyX0nruQrakvmfdCy3n+Up7ixYZetdTydwYTiZaVwZ5IWD6CMh2P+J/7mBWEC2sWaZFCHijX/GSMvXz0LL6lTaTeWc4GZ/wU2klD62kVShKi98O6rtV/Jdm50DWs1276a7rwHEh6zoyi5AVQ5+AWQnMeIe+ANoYaK166Hur41/8tvwG+pnapsUnZS8AAAAASUVORK5CYII="
+          />
+          <text>出票保真</text>
+        </view>
+        <view class="service-item">
+          <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACnElEQVRIS72W0UsUURTGv3N3dnsLTactKSTSkAyjqJmIiKDHoCgQKowIctdapR5868U/wIdCzV0NhJLoKSmo6C16kFyjJcsSEkKRoJ1tfYmondl7YmabZdZ2dRay+3rPfL97vnvuOUNYZX3TL2/LQ5wiiBPM3AZGvRNOyBDRDEM+CUA+qpu6s1RJhsptGPu6GxCy+sB8iQGFgQ8A3oL4ixPP1ABgLwG7CbBANIac0qemBgv7nvUXwDjQeZIFjQMUJOIhNpX45je358sdJL3/ahMFrS5migFskuQO9fXo44qAjBbtkYybIEoGlcDZ2smhhdUsdPeWD8caTSv/AMyaIFyvTyYG3L1iBs7JSUyA8FDNhjpofuCXH3E3hpt6NhibcuNgnCGWp91MHIDtOQdzc4CYVbPBY9WKl0LMF4BsJTPUYt9JAaB3jTDzhaCptNSm/NlSKbuCXdYcEd1Tp+IRsktRcuAziG+pUyO91djiFBTaA4ZeczH0Q5moeTe8XDhwpB9M1wTld1Baj8TANAgr0FypWipBbfGMVneXIc8x85Hw9OikHWtXF5T8JxB3U1qLPiNgu5pM7Knm9F5xIUSs/lV82Pu9oUXfg2jRBiwx8DKcTJz3C1hL3Nb5qkXvE3CU0gejP1nwYNjjv6F17mKIG3kz17s1NWZ4wX7EHYAe6SdJ3WUBaT3aDMY0CIv5XO64C/ErXgqoYFHmUEyX0nruQrakvmfdCy3n+Up7ixYZetdTydwYTiZaVwZ5IWD6CMh2P+J/7mBWEC2sWaZFCHijX/GSMvXz0LL6lTaTeWc4GZ/wU2klD62kVShKi98O6rtV/Jdm50DWs1276a7rwHEh6zoyi5AVQ5+AWQnMeIe+ANoYaK166Hur41/8tvwG+pnapsUnZS8AAAAASUVORK5CYII="
+          />
+          <text>配送保障</text>
+        </view>
+        <view class="arr-right type-undefined" style="top:50%;"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="sections">
+    <view class="buy-note">
+      <text>balabala</text>
+    </view>
+
+    <view class="introduce">
+
+    </view>
+  </view>
+
+  <view class="bottom-container">
+    <view href="javascript:;" class="custom-service">
+      <view class="icon"></view>
+      <view class="text">客服</view>
+    </view>
+    <view class="bottom-btn">
+      直接购票
+    </view>
+    <view style="display: none;">
+      <view class="inform-success-pop">
+        <view class="concern-success-icon"></view>
+        <view class="concern-success-text">关注成功</view>
+        <view class="inform-message">有票后我们会短信通知你～</view>
+        <view class="confirm-btn pop-close">知道了</view>
+      </view>
+    </view>
+  </view>
+</view>
