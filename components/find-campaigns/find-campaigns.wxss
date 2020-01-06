@@ -12,7 +12,7 @@
   margin-right: 11rpx;
   padding-left: 27rpx;
   padding-top:21rpx;
-  box-shadow: 1rpx 1rpx 1rpx #eee;
+  box-shadow: 0rpx 0rpx 10rpx #eee;
 }
 .find-campaigns-item:last-of-type{
   margin-right: 0;

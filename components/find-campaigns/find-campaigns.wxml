@@ -1,6 +1,7 @@
 <view class="find-campaigns-wrap">
   <view
     wx:for="{{campaigns}}"
+    wx:key="title"
     class="find-campaigns-item"
     style="background-image:url('{{item.backgroundImg}}');"
   >

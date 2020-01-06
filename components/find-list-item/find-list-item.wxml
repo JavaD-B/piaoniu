@@ -1,0 +1,15 @@
+<view class="find-list-item">
+  <view class="find-item-header">
+    <view class="find-item-user-pic">
+      <image src="https://img.piaoniu.com/video/ab74e0cf70751918bcf719a0701925ea5f20b7e8.jpg"></image>
+    </view>
+    <text class="find-item-user-name">票牛小秘书</text>
+    <view class="find-item-user-tag">官方</view>
+  </view>
+  <view class="find-item-content">
+  
+  </view>
+  <view class="find-item-footer">
+  
+  </view>
+</view>

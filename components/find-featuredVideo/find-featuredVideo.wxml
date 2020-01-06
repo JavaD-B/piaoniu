@@ -1,0 +1,15 @@
+<view class="find-featuredVideo-wrap">
+  <view
+    class="featuredVideo-item"
+    wx:for="{{featuredVideos}}"
+    wx:key="tweetId"
+  >
+    <view class="item-poster" style="background-image:url('{{item.tweetVO.videos[0].poster}}')">
+      <view class="item-tag">{{item.featuredVideoName}}</view>
+      <view class="item-views">{{item.tweetVo.views}}</view>
+    </view>
+    <view class="item-title">
+      {{item.tweetVO.videos[0].title}}
+    </view>
+  </view>
+</view>

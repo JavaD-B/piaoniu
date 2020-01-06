@@ -1,3 +1,13 @@
 <find-header></find-header>
 <find-banner banner="{{bannerData[0].banners}}"></find-banner>
 <find-campaigns campaigns="{{bannerData[1].campaigns}}"></find-campaigns>
+<find-featuredVideo featuredVideos="{{bannerData[2].featuredVideos}}"></find-featuredVideo>
+<find-classification
+  tag="{{tag}}"
+  bind:changeTag="changeTag"
+></find-classification>
+<find-List-wrap
+  listData="{{listData}}"
+>
+</find-List-wrap>
+

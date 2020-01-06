@@ -5,10 +5,10 @@
   autoplay="true"
   class="find-banner-wrap"
 >
-<swiper-item
-  wx:for="{{banner}}"
-  wx:key="{{item.id}}"
->
-  <image src="{{item.poster}}" class="find-banner"></image>
-</swiper-item>
+  <swiper-item
+    wx:for="{{banner}}"
+    wx:key="id"
+  >
+    <image src="{{item.poster}}" class="find-banner"></image>
+  </swiper-item>
 </swiper>

@@ -1,0 +1,17 @@
+<view class="find-classification-list">
+  <scroll-view
+    class="find-classification-list-wrap"
+    scroll-x='true'
+    enable-flex
+    scroll-with-animation="true"
+    style="width: 100%;"
+  >
+    <view
+      wx:for="{{tagList}}"
+      wx:key="id"
+      class='list-item {{tag===item.id?".active":""}}'
+      bindtap="changeTag"
+      data-tag="{{item.id}}"
+    >{{item.title}}</view>
+  </scroll-view>
+</view>

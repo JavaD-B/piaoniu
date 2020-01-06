@@ -1,0 +1,31 @@
+.find-list-item{
+  padding: 0 28rpx;
+  height: 787rpx;
+  background-color: #fff;
+}
+.find-item-header{
+  padding: 30rpx 0 23rpx;
+  display: flex;
+  align-items: center;
+}
+.find-item-header .find-item-user-pic{
+  width: 72rpx;
+  height: 72rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 12rpx;
+}
+.find-item-header .find-item-user-name{
+  font-size: 28rpx;
+  color: #262626;
+  margin-right: 10rpx;
+}
+.find-item-header .find-item-user-tag{
+  color: #fff;
+  width: 64rpx;
+  height: 28rpx;
+  border-radius: 12rpx;
+  background: linear-gradient(to right,#ec6244,#ea4163);
+  font-size: 20rpx;
+  text-align: center;
+}
