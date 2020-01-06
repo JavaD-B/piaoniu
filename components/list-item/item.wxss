@@ -4,23 +4,22 @@
 }
 .main-top {
     display: flex;
-    min-height: 125px;
+    min-height: 306rpx;
     position: relative;
+    width: 100%;
 }
-a{
-  padding-top: 30rpx;
-  display: block;
-  width: 150rpx;
-  height: 200rpx;
+.poster-wrap{
+  padding-top: 24rpx;
 }
 .poster{
-  width: 100%;
-  height: 100%;
+  width: 164rpx;
+  height: 220rpx;
 }
 .info{
   flex:1;
-  padding-top: 30rpx;
-  margin-left: 32rpx;
+  padding-top: 24rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
 }
 .title-line{
     font-size: 30rpx;
@@ -52,15 +51,27 @@ a{
   font-size: 20rpx;
   color: #999;
   margin-top: 8rpx;
-  margin-bottom: 32rpx;
+  display: flex;
 }
-.rank text{
+.categoryHotRank{
+  font-size: 24rpx;
+  background-image: linear-gradient(to right, #ea4a6f , #ed74b6);
+  color: white;
+  border-radius: 20rpx;
+  padding: 0 8rpx;
+  line-height: 48rpx;
+  margin-right: 18rpx;
+}
+.pingfen{
+  font-size:24rpx;
+  margin-right:8rpx;
+  line-height: 48rpx;
+}
+.rank .point{
+  line-height: 48rpx;
   font-size: 24rpx;
   font-weight: 700;
   color: #ffb02e;
-}
-.price-wrap {
-  margin-bottom: 20rpx;
 }
 .price{
   color: #ff2661;
@@ -72,12 +83,28 @@ a{
   font-size: 20rpx;
   color: #999;
 }
+.promotion-info{
+  border-bottom: 1rpx solid hsla(0,0%,90%,.5);
+}
+.info-item{
+  width: 64rpx;
+  height: 30rpx;
+  border: 1rpx solid #f0f0f0;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+  color: #b4b4b4;
+  line-height: 30rpx;
+  text-align: center;
+  margin-bottom: 16rpx;
+  margin-right: 4rpx;
+
+}
 .light-spot {
   font-size: 24rpx;
   color: #999;
-  padding: 28rpx 0;
+  padding: 20rpx 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  border-top: 1rpx solid hsla(0,0%,90%,.5);
+  border-bottom: 1rpx solid hsla(0,0%,90%,.5);
 }

@@ -2,7 +2,7 @@
 	<scroll-view class="scroll" style="-webkit-overflow-scrolling:touch" scroll-x="true" scroll-left='{{navscroll}}' scroll-with-animation='true'>
     <view class="contain">
       <view 
-        wx:for='{{list}}' 
+        wx:for='{{scrollData}}' 
         wx:for-index="idx"
         wx:for-item="item"
         wx:key='idx'

@@ -1,0 +1,37 @@
+/* components/list-choose/choose.wxss */
+.choose{
+  box-shadow: 0 8rpx 0 rgba(250,250,250,.15);
+}
+.choose-wrap{
+  display: flex;
+  padding:28rpx 0;
+}
+.choose-item{
+  flex: 1;
+  text-align: center;
+  font-size: 26rpx;
+}
+.choose-item::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 3px;
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  border-top-color: #666;
+}
+.active{
+  color: #ea3667;
+}
+.active::after {
+  top: -3px;
+  border-color: transparent;
+  border-bottom-color: #ea3667;
+}
+.choose-border{
+  width: 2rpx;
+  height: 40rpx;
+  background: #e6e6e6;
+}

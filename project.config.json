@@ -24,13 +24,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-<<<<<<< HEAD
 	"appid": "wxcc566818c974a46e",
 	"projectname": "piaoniu",
-=======
-	"appid": "wx48500a4a4cd271f3",
-	"projectname": "piaoma",
->>>>>>> master
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

@@ -3,26 +3,31 @@
 .contain{
   display:flex;
   width: fit-content;
+
 }
 .contain .item{
   display: inline-block;
-  padding:0 34rpx;
-  height: 100rpx;
-  font-size: 30rpx;
+  padding:0 25rpx;
+  height: 75rpx;
+  font-size: 26rpx;
   text-align:center;
-  line-height: 100rpx;
+  line-height: 75rpx;
   flex-shrink: 0;
+  position: relative;
 }
 .contain .active{
-  font-size: 40rpx;
+  font-size: 31rpx;
   font-weight: 700;
 }
 .contain .active::after{
   content: '';
   display: block;
-  height: 6rpx;
+  height: 4rpx;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
   transform:scale(0.5,1);
   transform-origin: 50% 0;
-  width: 140rpx;
+  width: 50%;
   background: red;
 }
