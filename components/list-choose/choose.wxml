@@ -1,0 +1,7 @@
+<view class="choose">
+	<view class="choose-wrap">
+		<view class="{{(choose==1)?'active choose-item':'choose-item'}}" bindtap="handleclick" data-index="1">综合排序</view>
+		<view class="choose-border"></view>
+		<view class="{{(choose==2)?'active choose-item':'choose-item'}}" bindtap="handleclick" data-index="2">全部时间</view>
+	</view>	
+</view>

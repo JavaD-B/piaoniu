@@ -1,66 +1,35 @@
 // pages/list/list.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    list:["全部分类","演唱会","话剧歌剧","休闲展览","体育赛事","旅游玩乐","音乐会","儿童亲子","舞蹈芭蕾","戏曲综艺"],
+    listData:[],
+    total:null,
+    index:1
+  },
+  getdata(){
+    let index=this.data.index
+    let result = wx.request({
+      url: `https://api.piaoniu.com/v2/activities?pageIndex=${index}&pageSize=10`,
+      success: (result) => {
+        this.setData({
+          listData:[
+            ...this.data.listData,
+            ...result.data.data
+          ],
+          total:Math.ceil(result.data.totalNum/10)
+        })    
+      }
+    })
+  },
+  onLoad() {
+    //数据请求
+    this.getdata()
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  scrollDown(){
+    this.setData({
+      index:this.data.index+1
+    })
+    this.getdata()
   }
 })

@@ -1,0 +1,40 @@
+<wxs module="filters" src="./tofix.wxs"></wxs>
+<view>
+  <view class="activity">
+    <view class="main-top">
+      <a class="poster-wrap">
+        <view class="video-play" style="background-size: 26px 26px; display: none;">
+          <video class="video"></video>
+        </view>
+        <image class='poster' src="{{data.poster}}"></image>
+      </a>
+      <view class="info">
+        <view class="title-line">
+          <a class="title">
+            <!-- <span class="city">[北京]</span> -->
+            {{data.properName}}</a>
+        </view>
+        <view class="time-address">
+          <span class="time">{{data.timeRange}}</span>
+          <span class="split">|</span>
+          <span class="address">{{data.venueName}}</span>
+        </view>
+        <view class="rank" decode="{{true}}">
+          <view wx:if="{{data.categoryHotRan}}" class="categoryHotRank">{{data.categoryHotRank}}</view>
+          <view class="pingfen">{{data.rank?'评分\t':'暂无评分'}}</view>
+          <view wx:if="data.rank" class="point">{{data.rank?filters.toFix(data.rank):''}}</view>
+        </view>
+        <view class="price-wrap">
+          <view>
+            <span class="price">{{data.lowPrice}}</span>
+            <span class="qi">元起</span>
+          </view>
+          <view class="status-text"></view>
+        </view>
+        <view class="promotion-info" style="display:flex">
+        </view>
+        <view wx:if="{{data.desc}}" class="light-spot">{{data.desc}}</view>
+      </view>
+    </view>
+  </view>
+</view>
