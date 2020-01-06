@@ -6,7 +6,11 @@ Page({
    */
   data: {
     tag:"hot",
-    bannerData:[]
+    bannerData:[],
+    nextPageKey:"",
+    pageSize:7,
+    listData:[],
+    tag:1
   },
 
   /**
@@ -29,8 +33,29 @@ Page({
         })
       }
     })
+    this.getListData()
   },
-
+  getListData(){
+    wx.request({
+      url: 'https://api.piaoniu.com/v4/feed/hot?pageSize=7&nextPageKey=',
+      data:{
+        pageSize:this.data.pageSize,
+        nextPageKey:this.data.nextPageKey,
+      },
+      method:'get',
+      success:(res)=>{
+        this.setData({
+          listData:[...this.data.listData,...res.data.data],
+          nextPageKey:res.data.nextPageKey
+        })
+      }
+    })
+  },
+  changeTag(e){
+    this.setData({
+      tag:e.detail.tag
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

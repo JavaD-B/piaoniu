@@ -1,0 +1,35 @@
+.find-classification-list{
+  height: 76rpx;
+  width: 100%;
+}
+.find-classification-list-wrap{
+  height: 76rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.find-classification-list-wrap .list-item{
+  padding: 0 31rpx;
+  font-size: 28rpx;
+  color: #999999;
+  font-weight: 600;
+  height: 100%;
+  position: relative;
+}
+.find-classification-list-wrap .list-item.active{
+  color: #262626;
+  font-size: 32rpx;
+}
+.find-classification-list-wrap .list-item.active:after{
+  content:"";
+  display: block;
+  height: 4rpx;
+  width: 48rpx;
+  background-color: #ea4064;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin:0 auto;
+}

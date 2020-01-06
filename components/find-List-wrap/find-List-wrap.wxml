@@ -1,0 +1,30 @@
+<view class="find-list">
+  <view
+    class="list-item"
+    wx:for="{{listData}}"
+    wx:key="subjectId"
+  >
+    <scroll-view
+      wx:if="{{item.type===11}}"
+      class="tag-list-wrap"
+      scroll-x
+      enable-flex
+      scroll-with-animation="true"
+    >
+      <view
+        class="tag-item-wrap"
+        wx:for="{{item.content.addition.topicList}}"
+        wx:for-item="tagItem"
+        wx:key="id"
+      >
+        <view
+          class="tag-item"
+          style="background-image:url('{{tagItem.backgroundImg}}')"
+        >
+          <text class="item-text">{{tagItem.type===99?'':'#'+tagItem.name+'#'}}</text>
+        </view>
+      </view>
+    </scroll-view>
+    <find-list-item wx:else />
+  </view>
+</view>

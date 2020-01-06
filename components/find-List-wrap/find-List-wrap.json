@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "find-list-item":"/components/find-list-item/find-list-item"
+  }
+}

@@ -2,7 +2,10 @@
   "usingComponents": {
     "find-header":"/components/find-header/find-header",
     "find-banner":"/components/find-banner/find-banner",
-    "find-campaigns":"/components/find-campaigns/find-campaigns"
+    "find-campaigns":"/components/find-campaigns/find-campaigns",
+    "find-featuredVideo":"/components/find-featuredVideo/find-featuredVideo",
+    "find-classification":"/components/find-classification/find-classification",
+    "find-List-wrap":"/components/find-List-wrap/find-List-wrap"
   },
   "navigationBarTitleText": "发现"
 }
