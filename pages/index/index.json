@@ -3,7 +3,10 @@
   "usingComponents": {
     "topbar":"/components/index-topbar/topbar",
     "banner":"/components/index-banner/banner",
-    "category":"/components/index-category/category"
+    "category":"/components/index-category/category",
+    "activity":"/components/index-activity/activity",
+    "selected":"/components/index-selected/selected",
+    "subject":"/components/index-subject/subject"
   },
   "navigationBarTitleText": "首页"
 }

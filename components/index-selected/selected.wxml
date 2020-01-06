@@ -1,0 +1,13 @@
+<view class="selected">
+<view class="selected-title">
+今日精选
+</view>
+<view class="selected-bar"></view>
+<view class="selected-cont">
+<selectedItem 
+wx:for="{{selectedList}}"
+wx:key="{{item.id}}"
+selectedItem="{{item}}"
+/>
+</view>
+</view>

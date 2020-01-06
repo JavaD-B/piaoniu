@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bannerList:[],
+    categoryList:[],
+    middleImg:{},
+    selectedList:[],
+    subjectList:[]
   },
 
   /**
@@ -19,7 +23,29 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+        wx.request({
+          url: 'https://api.piaoniu.com/v3/home?type=4', //仅为示例，并非真实的接口地址
+          header: {
+            'content-type': 'application/json' // 默认值
+          },
 
+          success :(res) =>{
+            console.log(res.data.floors[6].data.items);
+            
+            let bannerList = res.data.floors[0].data;
+            let categoryList = res.data.floors[1].data;
+            let middleImg = res.data.floors[4].data;
+            let selectedList = res.data.floors[5].data.items;
+            let subjectList = res.data.floors[6].data.items;
+            this.setData({
+              bannerList,
+              categoryList,
+              middleImg,
+              selectedList,
+              subjectList
+            })
+          }
+        })
   },
 
   /**

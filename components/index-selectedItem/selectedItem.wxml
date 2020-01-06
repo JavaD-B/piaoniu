@@ -1,0 +1,25 @@
+<view class="selected-item">
+
+<view class="discount" wx:if="{{selectedItem.discountRate}}">
+<view class="text">
+<view class="num">{{bit}}</view>
+<view class="fraction">{{decimal}}</view>
+<view class="unit">折</view>
+</view>
+</view>
+
+<view class="item-image">
+<image src="{{selectedItem.poster}}"></image>
+<view class="item-title">
+{{selectedItem.name}}
+</view>
+<view class="item-foot">
+<view class="item-price">
+￥{{selectedItem.lowPrice}}
+</view>
+<view class="item-type">
+{{selectedItem.categoryName}}
+</view>
+</view>
+</view>
+</view>

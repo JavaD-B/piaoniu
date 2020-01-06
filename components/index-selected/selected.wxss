@@ -1,0 +1,17 @@
+.selected-title{
+  font-size: 38rpx;
+  font-weight: 1000;
+  margin-bottom: 30rpx;
+}
+
+.selected-bar{
+  height: 50rpx;
+  width: 100%;
+  background-color: pink;
+}
+.selected-cont{
+  display: flex;
+  overflow-y: scroll;
+
+}
+.selected-cont::-webkit-scrollbar {display:none}

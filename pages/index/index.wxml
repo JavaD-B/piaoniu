@@ -1,6 +1,9 @@
 <!--pages/index/index.wxml-->
 <view class="index-cont">
 <topbar/>
-<banner/>
-<category/>
+<banner bannerList = "{{bannerList}}"/>
+<category categoryList="{{categoryList}}"/>
+<activity middleImg="{{middleImg}}"/>
+<selected selectedList="{{selectedList}}"/>
+<subject subjectList="{{subjectList}}"/>
 </view>

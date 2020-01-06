@@ -1,0 +1,15 @@
+<view class="activity-cont">
+<image src="https://upload-images.jianshu.io/upload_images/19413235-6dedf22d8a46ce91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></image>
+<image src="https://upload-images.jianshu.io/upload_images/19413235-84e7df541146791f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></image>
+</view>
+<view class="service">
+<view class="service-left">服务保障</view>
+<view class="service-right">
+<view>无票赔付</view>
+<view>出票保真</view>
+<view class="last-child">配送保障</view>
+</view>
+</view>
+<view class="jay-chou">
+<image src="{{middleImg.poster}}"></image>
+</view>

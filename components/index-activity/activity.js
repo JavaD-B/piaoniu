@@ -1,13 +1,14 @@
-// components/banner/banner.js
+// components/index-activity/activity.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    bannerList:{
-      type:Array
+    middleImg:{
+      type:Object
     }
   },
+
   /**
    * 组件的初始数据
    */

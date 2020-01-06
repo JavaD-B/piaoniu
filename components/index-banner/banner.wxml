@@ -1,1 +1,10 @@
-<view class="banner"><image src="https://img.piaoniu.com/misc/146d599c04e7e5335a842acce74392c491c8bfd7.png"></image>  </view>
+<view class="banner">
+  <swiper indicator-dots='true' indicator-color='#6c614b' indicator-active-color='#fefefe' autoplay='true'>
+    <swiper-item 
+    wx:for="{{bannerList}}"
+    wx:key="{{item.logBannerId}}"
+    >
+      <image src="{{item.poster}}"></image>
+    </swiper-item>
+  </swiper>
+  </view>

@@ -1,0 +1,29 @@
+<view 
+class="subject"
+style="background: linear-gradient(to right ,{{color}}, {{toColor}})"
+>
+  <swiper circular="true" 
+  class="subject-swiper" 
+  bindchange="swiperChange"
+   data-color="{{subjectList}}"
+   previous-margin="175rpx"
+   next-margin="175rpx"
+   >
+    <swiper-item 
+    class="subject-swiper-item"
+    wx:for="{{subjectList}}"
+    wx:key="{{item.themeId}}"
+    >
+      <image src="{{item.poster}}" class="subject-swiper-image"></image>
+      <view class="item-middle">{{item.tag}}</view>
+      <view class="item-bottom">
+      <view class="title">
+      {{item.title}}
+      </view>
+    <view class="desc">
+      {{item.desc}}
+      </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

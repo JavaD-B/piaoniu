@@ -1,6 +1,9 @@
 .category-cont{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  height: 280rpx;
+  margin-top: 48rpx;
 }
 .category-item{
   width: 124rpx;
@@ -10,4 +13,7 @@
 .item-icon{
   width: 84rpx;
   height: 84rpx;
+}
+.category-item:nth-child(n+6) image{
+  transform: scale(.7);
 }

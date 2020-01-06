@@ -1,0 +1,45 @@
+.activity-cont{
+  display: flex;
+  margin-top: 54rpx;
+}
+image{
+  width: 330rpx;
+  height: 138rpx;
+  box-shadow: 3rpx 3rpx 3rpx #f9f9f9;
+}
+.service{
+  margin-top: 40rpx;
+  width: 682rpx;
+  height: 64rpx;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+
+}
+.service-left{
+  color: #737373;
+  font-weight: 800;
+  font-size: 22rpx;
+  margin-left: 20rpx;
+  line-height: 64rpx;
+}
+.service-right{
+  display: flex;
+  font-size: 22rpx;
+  color: #939393;
+  margin-top: 21rpx;
+}
+.service-right view{
+  height: 30rpx;
+  padding: 0 10rpx;
+  border-right: 2rpx solid #e6e6e6;
+
+}
+.last-child{
+border-right: none !important;
+}
+.jay-chou image{
+  width: 682rpx;
+  height: 168rpx;
+  margin-top: 10rpx;
+}

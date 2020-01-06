@@ -1,13 +1,14 @@
-// components/banner/banner.js
+// components/index-selected/selected.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    bannerList:{
+    selectedList:{
       type:Array
     }
   },
+
   /**
    * 组件的初始数据
    */
