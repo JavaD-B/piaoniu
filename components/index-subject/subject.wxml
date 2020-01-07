@@ -12,7 +12,7 @@ style="background: linear-gradient(to right ,{{color}}, {{toColor}})"
     <swiper-item 
     class="subject-swiper-item"
     wx:for="{{subjectList}}"
-    wx:key="{{item.themeId}}"
+    wx:key="themeId"
     >
       <image src="{{item.poster}}" class="subject-swiper-image"></image>
       <view class="item-middle">{{item.tag}}</view>
