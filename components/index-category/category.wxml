@@ -2,7 +2,7 @@
 <view class="category-cont">
 <view class="category-item"
 wx:for="{{categoryList}}"
-wx:key="{{item.poster}}"
+wx:key="poster"
 >
 <image
 src="{{item.poster}}" 

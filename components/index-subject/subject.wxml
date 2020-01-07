@@ -12,7 +12,7 @@ style="background: linear-gradient(to right ,{{color}}, {{toColor}})"
     <swiper-item 
     class="subject-swiper-item {{current === index ? 'current' : 'notCurrent'}}"
     wx:for="{{subjectList}}"
-    wx:key="{{index}}"
+    wx:key="index"
     >
       <view class="not-current">
       <image src="{{item.poster}}" class="subject-swiper-image"></image>
