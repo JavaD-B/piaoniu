@@ -12,7 +12,7 @@ Component({
         if(e.length!==0){
           this.setData({
             color:e[0].color,
-            toColor:e[0].color.slice(0,1)+'1A'+e[0].color.slice(1) 
+            toColor:e[0].color.slice(0,1)+'00'+e[0].color.slice(1) 
           })
         }
       }
@@ -24,22 +24,21 @@ Component({
    */
   data: {
    color:"",
-   toColor:""
+   toColor:"",
+   current:0
   },
   /**
    * 组件的方法列表
    */
   methods: {
     swiperChange(e){
-      console.log(e);
-      
       let current = e.detail.current
       let color = e.currentTarget.dataset.color[current].color
       this.setData({
         color,
-        toColor:color.slice(0,1)+'1A'+color.slice(1) 
+        toColor:color.slice(0,1)+'00'+color.slice(1),
+        current
       })
-     console.log(this.data.toColor);
     },
 
   }
