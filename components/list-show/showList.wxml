@@ -1,0 +1,10 @@
+<!--components/list-show/showList.wxml-->
+<scroll-view bindscrolltolower="scrollDown" scroll-y='true' style="-webkit-overflow-scrolling:touch;height:100%" scroll-y='true'>
+  <item 
+      wx:for="{{listData}}"
+      wx:for-index='ind'
+      wx:for-item='item'
+      wx:key='ind'
+      data="{{item}}" 
+  ></item>
+</scroll-view>
