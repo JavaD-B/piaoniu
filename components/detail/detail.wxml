@@ -5,10 +5,10 @@
     </view>
 
     <view class="header-main">
-      <image src="https://img.piaoniu.com/poster/e95b31823370879f5a694253e2807f03a504ee4a.jpg?imageView2/2/w/208/h/280" class="poster" />
+      <image src="{{detailData.activity.poster}}" class="poster" />
       <view class="info">
         <view class="top">
-          <view class="title">里马斯·图米纳斯执导话剧《浮士德》官方周边商品【DM】</view>
+          <view class="title">{{detailData.activity.name}}</view>
           <view class="stars-score">
             <text class="score">暂无评分</text>
             <view class="stars">
@@ -31,7 +31,7 @@
           </view>
           <view class="price-viewne">
             <view class="price-info">
-              <text class="price">28</text>
+              <text class="price">{{detailData.activity.lowPrice}}</text>
               <text class="qi">元起</text>
             </view>
           </view>
@@ -52,10 +52,10 @@
     </view>
 
     <view class="header-bottom">
-      <view class="time-range" style="display:;">2020.03.11 - 03.15</view>
+      <view class="time-range" style="display:;">{{detailData.activity.timeRange}}</view>
       <view class="venue" bindtap="mapcheck">
         <view class="inner">
-          <view class="name">天桥艺术中心大剧场</view>
+          <view class="name">{{detailData.activity.venue.name}}</view>
         </view>
         <view class="icon">
           <image src="https://static.piaoniu.com/nuxt-static/img/icon-park2.c5fced0.png" />
@@ -85,11 +85,12 @@
 
   <view class="sections">
     <view class="buy-note">
-      <text>{{detailData.creditPayDesc}}</text>
+      <view class="buy-title">购买须知</view>
+      <text>{{detailData.activity.activityDetails[0].detailDesc}}</text>
     </view>
 
     <view class="introduce">
-
+      <view class="buy-title">演出简介</view>
     </view>
   </view>
 

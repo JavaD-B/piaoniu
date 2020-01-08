@@ -3,6 +3,8 @@
     <map 
       id="map"
       show-location
+      longitude="{{addInfo.longitude}}"
+      latitude="{{addInfo.latitude}}"
       >
         <cover-image 
           src="/source/add-center.png" 
@@ -13,8 +15,8 @@
   </view>
 
   <view class="nav">
-    <view class="add-name">嘉德艺术中心</view>
-    <view class="add-detail">北京市东城区王府井大街1号</view>
+    <view class="add-name">{{addInfo.name}}</view>
+    <view class="add-detail">{{addInfo.address}}</view>
     <image src="/source/add-direction.png"></image>
   </view>
 </view>

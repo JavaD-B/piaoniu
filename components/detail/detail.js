@@ -1,4 +1,6 @@
 // components/detail/detail.js
+const app = getApp()
+
 Component({
   /**
    * 组件的属性列表
@@ -36,8 +38,17 @@ Component({
    */
   methods: {
     mapcheck() {
+      var addInfo = {
+        latitude: this.data.detailData.activity.venue.latitude,
+        longitude: this.data.detailData.activity.venue.longitude,
+        name: this.data.detailData.activity.venue.name,
+        address: this.data.detailData.activity.venue.address
+      }
+
+      app.setInfo(addInfo)
+
       wx.navigateTo({
-        url: '/components/map/map',
+        url: `/components/map/map?latitude=${this.data.detailData.activity.venue.latitude}` ,
       })
     }
   }
