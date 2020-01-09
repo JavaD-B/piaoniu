@@ -1,3 +1,4 @@
+<wxs module="filter" src="../../filters/filter.wxs"></wxs>
 <view class="find-featuredVideo-wrap">
   <view
     class="featuredVideo-item"
@@ -6,7 +7,10 @@
   >
     <view class="item-poster" style="background-image:url('{{item.tweetVO.videos[0].poster}}')">
       <view class="item-tag">{{item.featuredVideoName}}</view>
-      <view class="item-views">{{item.tweetVo.views}}</view>
+      <view class="item-views">
+        <view class="iconfont icon-sheying"></view>
+        {{filter.getViews(item.tweetVO.views)}}
+      </view>
     </view>
     <view class="item-title">
       {{item.tweetVO.videos[0].title}}

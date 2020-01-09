@@ -1,0 +1,35 @@
+var timeLengthFilter=function(time){
+  var m=parseInt(~~time/60)
+  var s=~~time%60
+  return m+":"+s
+}
+var numFilter=function(num){
+  if(num>999){
+    var k=(num/1000).toFixed(1)
+    return k+"k"
+  }
+  return num
+}
+var getLevel=function(level){
+  if(level>0&&level!==95){
+    return "Lv "+level
+  }else if(level===95){
+    return "主办"
+  }else if(level===0){
+    return "新手"
+  }
+}
+var getViews=function(views){
+  if(views>9999){
+    return (views/10000).toFixed(1)+"万"
+  }else{
+    return views
+  }
+}
+
+module.exports={
+  timeLengthFilter:timeLengthFilter,
+  numFilter:numFilter,
+  getLevel:getLevel,
+  getViews:getViews
+}
