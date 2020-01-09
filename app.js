@@ -1,2 +1,9 @@
 //app.js
-App({})
+App({
+  addInfo: {
+    latitude: ''
+  },
+  setInfo(addInfo) {
+    this.addInfo = addInfo
+  }
+})

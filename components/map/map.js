@@ -1,10 +1,16 @@
 // components/map/map.js
+const app = getApp()
+
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
 
+  },
+
+  onLoad: function(options) {
+    console.log(options)
   },
 
   lifetimes: {
@@ -16,14 +22,30 @@ Component({
       wx.setNavigationBarTitle({
         title: '位置信息'
       })
-    }
+
+      let addInfo = app.addInfo
+
+      this.setData({
+        addInfo
+      })
+
+      // let pages = getCurrentPages()
+
+      // let currentPage = pages[2]
+
+      // let options = currentPage.options
+
+      // console.log(currentPage)
+
+      // console.log(options)
+    },
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-
+    addInfo: {}
   },
 
   /**
