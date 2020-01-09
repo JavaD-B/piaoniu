@@ -1,6 +1,6 @@
+@import "/source/icon/icon.wxss";
 .find-list-item{
   padding: 0 28rpx;
-  height: 787rpx;
   background-color: #fff;
 }
 .find-item-header{
@@ -15,6 +15,12 @@
   border-radius: 50%;
   margin-right: 12rpx;
 }
+.find-item-user-pic .user-avatar{
+  width: 100%;
+  height: 100%;
+}
+
+
 .find-item-header .find-item-user-name{
   font-size: 28rpx;
   color: #262626;
@@ -28,4 +34,47 @@
   background: linear-gradient(to right,#ec6244,#ea4163);
   font-size: 20rpx;
   text-align: center;
+}
+
+.find-item-content{
+  font-size: 30rpx;
+}
+
+.item-video{
+  height: 390rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  margin: 18rpx 0;
+  background-size: cover;
+  background-position: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find-item-footer{
+  height: 80rpx;
+  width: 100%;
+  border-top: 1rpx solid #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9f9f9f;
+  font-size: 24rpx;
+}
+
+.find-item-footer-right{
+  display: flex;
+  height: 100%;
+}
+
+.footer-comment,.footer-zan{
+  margin-left: 50rpx;
+  display: flex;
+  align-items: center;
+}
+.iconfont{
+  margin-right: 14rpx;
+  width: 36rpx;
+  height: 36rpx;
 }

@@ -1,15 +1,42 @@
 <view class="find-list-item">
   <view class="find-item-header">
     <view class="find-item-user-pic">
-      <image src="https://img.piaoniu.com/video/ab74e0cf70751918bcf719a0701925ea5f20b7e8.jpg"></image>
+      <image class="user-avatar" src="{{comment.content.user.avatar}}"></image>
     </view>
-    <text class="find-item-user-name">票牛小秘书</text>
+    <text class="find-item-user-name">{{comment.content.user.userName}}</text>
     <view class="find-item-user-tag">官方</view>
   </view>
   <view class="find-item-content">
-  
+    <view class="item-stars">
+    </view>
+    <view class="item-text">
+      {{comment.content.content}}
+    </view>
+    <view class="item-pic">
+    </view>
+    <view
+      class="item-video"
+      wx:if="{{comment.content.videos.length>0}}"
+      style="background-image:url({{comment.content.videos[0].poster}})"
+    >
+      <view class="iconfont icon-play"></view>
+    </view>
+    <view class="item-tag"></view>
+    <view class="item-detail"></view>
   </view>
   <view class="find-item-footer">
-  
+    <view class="find-item-footer-left">
+      1.2k 阅读
+    </view>
+    <view class="find-item-footer-right">
+      <view class="footer-zan">
+        <view class="iconfont icon-dianzan"></view>
+        16
+      </view>
+      <view class="footer-comment">
+        <view class="iconfont icon-Temp-"></view>
+        回复
+      </view>
+    </view>
   </view>
 </view>
