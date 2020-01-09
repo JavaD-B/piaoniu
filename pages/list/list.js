@@ -34,7 +34,13 @@ Page({
     }],
     nowindex:0,
     cuind:0,
-
+    Flist1:['综合排序','最新优先','低价优先','好评优先'],
+    Flist2:['全部时间','一周内','一月内','本周末'],
+    hid1:true,
+    hid2:true,
+    choosedata:['综合排序','全部时间'],
+    time:['','thisWeekend','weekly','monthly'],
+    showlist:['','']
   },
   
   onLoad() {
@@ -54,5 +60,34 @@ Page({
       nowindex:currentindex,
       cuind:e.detail.current,
     })
+  },
+  listone:function(e){
+    this.setData({
+      hid1:true,
+      choosedata:[this.data.Flist1[e.detail],this.data.choosedata[1]],
+      showlist:[e.detail,this.data.showlist[1]]
+    })
+    // console.log(e.detail+'one')
+  },
+  listtwo:function(e){
+    this.setData({
+      hid2:true,
+      choosedata:[this.data.choosedata[0],this.data.Flist2[e.detail]],
+      showlist:[this.data.showlist[0],this.data.time[e.detail]]
+    })
+    // console.log(e.detail+'two')
+  },
+  choose:function(e){
+   if(e.detail==1){
+    this.setData({
+      hid1:!this.data.hid1,
+      hid2:true
+    })
+   }else{
+    this.setData({
+      hid1:true,
+      hid2:!this.data.hid2
+    })
+   }
   }
 })
