@@ -1,0 +1,17 @@
+/* components/list-frame/frame.wxss */
+.frame-list{
+  background: white;
+}
+.frame-item{
+  display: flex;
+  justify-content: space-between;
+  height: 79rpx;
+  line-height: 79rpx;
+  font-size: 23rpx;
+  padding:0 33rpx;
+  border-top: 1rpx solid #f2f2f2;
+  color: #666666;
+}
+.frame-icon{
+  line-height: 110rpx;
+}

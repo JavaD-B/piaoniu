@@ -1,8 +1,6 @@
 //app.js
 App({
-  addInfo: {
-    latitude: ''
-  },
+  addInfo: {},
   setInfo(addInfo) {
     this.addInfo = addInfo
   }
