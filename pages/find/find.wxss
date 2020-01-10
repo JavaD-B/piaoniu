@@ -2,6 +2,7 @@
 page{
   background-color: #ffffff;
   overflow-x: hidden;
+  width: 100%;
 }
 .not-login{
   position: absolute;
