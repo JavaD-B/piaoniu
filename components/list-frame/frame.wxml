@@ -1,0 +1,14 @@
+<!--components/list-frame/frame.wxml-->
+<!-- <text>components/list-frame/frame.wxml</text> -->
+<view class="frame-list">
+  <view 
+    class="frame-item"
+    wx:for='{{list}}'
+    wx:for-index='idx'
+    wx:key='idx'
+    data-index="{{idx}}"
+    bindtap="handclick"
+  >
+    <text class="frame-text">{{item}}</text><icon hidden='{{idx!=index}}' class="frame-icon" type="success_no_circle" size="18" color="#d84e70"/>
+  </view>
+</view>

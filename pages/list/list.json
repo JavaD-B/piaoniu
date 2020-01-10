@@ -5,6 +5,8 @@
     "tarbar":"/components/list-tarbar/tarbar",
     "choose":"/components/list-choose/choose",
     "topBar":"/components/index-topbar/topbar",
-    "listshow":"/components/list-show/showList"
+    "listshow":"/components/list-show/showList",
+    "frame":"/components/list-frame/frame"
+    
   }
 }
