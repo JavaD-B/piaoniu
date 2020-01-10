@@ -1,11 +1,10 @@
-// components/find-list-item/find-list-item.js
+// components/find-detail-comment/find-detail-comment.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    comment:Object,
-    ifshowComment:Boolean
+
   },
 
   /**

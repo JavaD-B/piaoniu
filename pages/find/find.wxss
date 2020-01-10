@@ -1,4 +1,41 @@
 /* pages/find/find.wxss */
 page{
   background-color: #ffffff;
+  overflow-x: hidden;
+}
+.not-login{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 360rpx;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.not-login .logo{
+  width: 100%;
+  height: 270rpx;
+}
+.not-login .tip{
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.not-login .login{
+  width: 240rpx;
+  height: 68rpx;
+  text-align: center;
+  line-height: 68rpx;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  background: linear-gradient(to left,#e5746e,#df608d);
 }
