@@ -13,11 +13,13 @@
   position: relative;
   left:32rpx;
 }
+
 .find-tabsbar{
   position: relative;
   left: -16rpx;
   border-top: 1px solid #4d8e86;
 }
+
 .discount{
   position: absolute;
     top: -6rpx;

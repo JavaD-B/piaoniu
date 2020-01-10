@@ -39,7 +39,8 @@ Component({
     itemFourHeight:508,
     fixed:false,
     bit:0,
-    decimal:0
+    decimal:0,
+    categoryType:0
   },
 
   /**
@@ -47,20 +48,40 @@ Component({
    */
 
 
- 
   methods: {
-    handleTap(){
-      console.log(1);
+    handleTap(e){
+      // console.log(e);
+      let {detail} = e
+      this.setData({
+        categoryType:detail
+      }) 
+      this.getData()
     },
-    handleScrollEnd(){
-
+    getData(){
+      this.setData({
+        index:2
+      })
+      wx.request({
+        url: `https://api.piaoniu.com/v3/home/recommend?categoryType=${this.data.categoryType}&pageIndex=${this.data.index}&pageSize=10`, //仅为示例，并非真实的接口地址
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success :(res) =>{      
+          this.setData({
+            contOne:[],
+            contTwo:[]
+          })
+          this.pushList(res.data.data)
+        }
+      })
+    },
+    handleScrollEnd(){     
           wx.request({
-        url: `https://api.piaoniu.com/v3/home/recommend?categoryType=0&pageIndex=${this.data.index}&pageSize=10`, //仅为示例，并非真实的接口地址
+        url: `https://api.piaoniu.com/v3/home/recommend?categoryType=${this.data.categoryType}&pageIndex=${this.data.index}&pageSize=10`, //仅为示例，并非真实的接口地址
         header: {
           'content-type': 'application/json' // 默认值
         },
         success :(res) =>{
-          console.log(res);
           
           this.setData({
             index : this.data.index +1
@@ -68,7 +89,6 @@ Component({
           this.pushList(res.data.data)
         }
       })
-
     },
     pushList(e){
       
