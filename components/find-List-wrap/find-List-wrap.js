@@ -6,7 +6,8 @@ Component({
   properties: {
     listData:{
       type:Array
-    }
+    },
+    ifshowComment:Boolean
   },
 
   /**
@@ -20,6 +21,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    goDetail(e){
+      wx.navigateTo({
+        url: '/pages/find-detail/find-detail?id='+e.currentTarget.dataset.id,
+      })
+    }
   }
 })

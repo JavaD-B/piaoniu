@@ -26,9 +26,15 @@ Component({
       let addInfo = app.addInfo
 
       this.setData({
-        addInfo
+        addInfo,
+        marker: [{
+          latitude: addInfo.latitude,
+          longitude: addInfo.longitude,
+          iconPath: '/source/add-marker.png',
+          width: 24,
+          height: 39
+        }]
       })
-
       // let pages = getCurrentPages()
 
       // let currentPage = pages[2]
@@ -45,7 +51,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    addInfo: {}
+    addInfo: {},
+    marker: []
   },
 
   /**

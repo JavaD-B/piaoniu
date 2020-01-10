@@ -22,6 +22,7 @@
 }
 .header .active{
   color:#262626;
+  font-weight: 600;
 }
 .add-circles{
   height:62rpx;

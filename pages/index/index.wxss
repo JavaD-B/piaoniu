@@ -1,4 +1,6 @@
 /* pages/index/index.wxss */
 .index-cont{
   padding: 0 34rpx;
+  height: 100%;
+  width: 100%;
 }

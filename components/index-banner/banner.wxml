@@ -1,8 +1,8 @@
 <view class="banner">
-  <swiper indicator-dots='true' indicator-color='#6c614b' indicator-active-color='#fefefe' autoplay='true'>
+  <swiper indicator-dots='true' indicator-color='#6c614b' indicator-active-color='#fefefe' autoplay='true' class="index-swiper">
     <swiper-item 
     wx:for="{{bannerList}}"
-    wx:key="{{item.logBannerId}}"
+    wx:key="logBannerId"
     >
       <image src="{{item.poster}}"></image>
     </swiper-item>

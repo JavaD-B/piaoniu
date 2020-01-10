@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "selectedItem":"../index-selectedItem/selectedItem"
+    "selectedItem":"../index-selectedItem/selectedItem",
+    "index-tabsbar":"../index-tabsbar/tabsbar"
   }
 }

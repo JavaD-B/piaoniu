@@ -1,0 +1,157 @@
+<view class="find">
+	<view class="title">
+		<view class="text">
+			发现精彩
+		</view>
+	</view>
+	<index-tabsbar scrollData="{{list}}" bind:getType="handleTap" class="find-tabsbar 	{{scrollTop > 920 ? 'tabsbar-position' : ''}}"  />
+
+
+ 
+ 	<view class="cont-wrapper" style="display:flex">
+		<view class="find-cont-1">
+
+			<view class="find-item" wx:for="{{contOne}}" wx:key="id">
+
+				<view class="find-item-1" wx:if="{{item.type===1}}">
+
+					<view class="discount"  wx:if="{{item.data.discountRate}}" > 
+						<view class="discount-text">
+						<view class="num">8</view>
+						<view class="fraction">.3</view>
+						<view class="unit">折</view>
+						</view>
+						</view>
+
+
+					<image src="{{item.data.poster}}"></image>
+					<view class="find-item-intro">
+						<view class="find-item-name">
+							{{item.data.name}}
+						</view>
+						<view class="item-foot">
+							<view class="item-price">
+								￥{{item.data.lowPrice}}
+							</view>
+							<view class="item-type">
+								{{item.data.categoryName}}
+							</view>
+						</view>
+					</view>
+				</view>
+
+
+	
+				<view class="find-item-2" wx:if="{{item.type===2}}">
+					<image src="{{item.data.poster}}"></image>
+					<view class="item-2-foot" style="background: linear-gradient(to top, rgba(242,54,112,1), rgba(242,54,112,.0));">
+						<view class="item-2-foot-cont">
+							<view class="item-2-recommend">{{item.data.tag}}</view>
+							<view class="item-2-title">{{item.data.name}}</view>
+							<view class="item-2-no">{{item.data.desc}}</view>
+						</view>
+					</view>
+				</view>
+
+				<view class="find-item-3" wx:if="{{item.type===4}}">
+					<view class="item-3-poster" style="background: url('{{item.data.content.image.url || item.data.content.video.poster}}'); background-size:cover ;background-position: 45%"></view>
+					<view class="item-3-foot">
+						<view class="item-3-recommend">{{item.data.tag}}</view>
+						<view class="item-3-text">
+							{{item.data.content.content}}
+						</view>
+						<view class="item-3-user">
+							<image src="{{item.data.content.user.avatar}}"></image>
+							<view class="user-name">{{item.data.content.user.userName}}</view>
+						</view>
+					</view>
+				</view>
+
+				<view class="find-item-4" wx:if="{{item.type===3}}">
+					<view class="find-item-4-title">热搜榜</view>
+					<view class="find-item-4-intro">{{item.data.title}}</view>
+					<view class="find-item-4-cont">
+						<view class="item-4-item" wx:for="{{item.data.items}}" wx:key="index">
+							{{item.name}}
+						</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<view class="find-cont-2">
+
+			<view class="find-item" wx:for="{{contTwo}}" wx:key="id">
+
+				<view class="find-item-1" wx:if="{{item.type===1}}">
+								<view class="discount"  wx:if="{{item.data.discountRate}}" > 
+						<view class="discount-text">
+						<view class="num">9</view>
+						<view class="fraction">.4</view>
+						<view class="unit">折</view>
+						</view>
+						</view>
+					<image src="{{item.data.poster}}"></image>
+					<view class="find-item-intro">
+						<view class="find-item-name">
+							{{item.data.name}}
+						</view>
+						<view class="item-foot">
+							<view class="item-price">
+								￥{{item.data.lowPrice}}
+							</view>
+							<view class="item-type">
+								{{item.data.categoryName}}
+							</view>
+						</view>
+					</view>
+				</view>
+
+
+				<view class="find-item-2" wx:if="{{item.type===2}}">
+					<image src="{{item.data.poster}}"></image>
+					<view class="item-2-foot" style="  background: linear-gradient(to top,  rgba(242,54,112,1), rgba(242,54,112,.0));">
+						<view class="item-2-foot-cont">
+							<view class="item-2-recommend">{{item.data.tag}}</view>
+							<view class="item-2-title">{{item.data.name}}</view>
+							<view class="item-2-no">{{item.data.desc}}</view>
+						</view>
+					</view>
+				</view>
+
+				<view class="find-item-3" wx:if="{{item.type===4}}">
+					<view class="item-3-poster" style="background: url('{{item.data.content.image.url || item.data.content.video.poster}}'); background-size:cover ;background-position: 45%"></view>
+					<view class="item-3-foot">
+						<view class="item-3-recommend">{{item.data.tag}}</view>
+						<view class="item-3-text">
+							{{item.data.content.content}}
+						</view>
+						<view class="item-3-user">
+							<image src="{{item.data.content.user.avatar}}"></image>
+							<view class="user-name">{{item.data.content.user.userName}}</view>
+						</view>
+					</view>
+				</view>
+
+				<view class="find-item-4" wx:if="{{item.type===3}}">
+					<view class="find-item-4-title">热搜榜</view>
+					<view class="find-item-4-intro">{{item.data.title}}</view>
+					<view class="find-item-4-cont">
+						<view class="item-4-item" wx:for="{{item.data.items}}" wx:key="index">
+							{{item.name}}
+						</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		</view>
+
+
+
+
+
+
+
+</view>

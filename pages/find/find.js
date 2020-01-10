@@ -14,7 +14,9 @@ Page({
     listData:[],
     feedData:[],
     tag:1,
-    ifFirst:true
+    ifFirst:true,
+    ifLogin:false,
+    ifshowComment:true
   },
 
   /**
@@ -29,7 +31,7 @@ Page({
    */
   onReady: function () {
     wx.request({
-      url: 'https://api.piaoniu.com/v1/feed/banner',
+      url: 'https://www.beetleworld.xyz/app/v1/feed/banner',
       method:'get',
       success:(res)=>{
         this.setData({
@@ -43,29 +45,45 @@ Page({
     wx.showLoading({})
     let url=""
     if(this.data.tag===1){
-      url="https://api.piaoniu.com/v4/feed/hot"
+      url="https://www.beetleworld.xyz/app/v4/feed/hot"
     }else{
-      url=`https://api.piaoniu.com/v1/tag/${this.data.tag}`
+      url=`https://www.beetleworld.xyz/app/v1/tag/${this.data.tag}`
     }
     if(this.data.myType==="feed"){
-      url="https://api.piaoniu.com/v1/feed"
+      url="https://www.beetleworld.xyz/app/v1/feed"
     }
-    wx.request({
-      url,
-      data:{
-        pageSize:this.data[pageSizeType],
-        nextPageKey:this.data[keyType],
-      },
-      method:'get',
-      success:(res)=>{
-        this.setData({
-          [type]:[...this.data[type],...res.data.data],
-          [keyType]:res.data.nextPageKey
-        },()=>{
-          wx.hideLoading({})
-        })
-      }
-    })
+    try{
+      wx.request({
+        url,
+        data:{
+          pageSize:this.data[pageSizeType],
+          nextPageKey:this.data[keyType],
+        },
+        method:'get',
+        success:(res)=>{
+          if(res.statusCode===200){
+            this.setData({
+              [type]:[...this.data[type],...res.data.data],
+              [keyType]:res.data.nextPageKey,
+              ifLogin:true
+            },()=>{
+              wx.hideLoading({})
+            })
+          }else{
+            this.setData({
+              ifLogin:false
+            },()=>{
+              wx.hideLoading({})
+            })
+          }
+        },
+        fail:(error)=>{
+          console.log(error)
+        }
+      })
+    }catch(e){
+      // console.log(e)
+    }
   },
   changeTag(e){
     this.setData({

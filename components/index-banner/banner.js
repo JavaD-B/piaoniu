@@ -8,6 +8,7 @@ Component({
       type:Array
     }
   },
+
   /**
    * 组件的初始数据
    */
