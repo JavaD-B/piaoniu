@@ -20,6 +20,18 @@
   top: 140rpx;
   border-radius: 5rpx;
 }
+.current .not-current{
+  transform: scale(1);
+  transition: all .5s;
+}
+.notCurrent{
+  opacity: .5;
+}
+
+.notCurrent .not-current{
+  transform: scale(0.6);
+  transition: all .5s;
+}
 .item-bottom{
   width: 270rpx;
   height: 136rpx;

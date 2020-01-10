@@ -9,7 +9,10 @@ Page({
     categoryList:[],
     middleImg:{},
     selectedList:[],
-    subjectList:[]
+    subjectList:[],
+    selectedTabList:[],
+    findTabList:[],
+    scrollTop:0
   },
 
   /**
@@ -23,6 +26,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    this.find = this.selectComponent('#index-find')
+    
+    
         wx.request({
           url: 'https://api.piaoniu.com/v3/home?type=4', //仅为示例，并非真实的接口地址
           header: {
@@ -30,24 +36,37 @@ Page({
           },
 
           success :(res) =>{
-            console.log(res.data.floors[6].data.items);
-            
+            console.log(res.data.floors);
             let bannerList = res.data.floors[0].data;
             let categoryList = res.data.floors[1].data;
             let middleImg = res.data.floors[4].data;
             let selectedList = res.data.floors[5].data.items;
+            let selectedTabList = res.data.floors[5].data.tabs;
             let subjectList = res.data.floors[6].data.items;
+            let findList = res.data.floors[6].data.items.data;
+            let findTabList = res.data.floors[6].data.tabs;
             this.setData({
               bannerList,
               categoryList,
               middleImg,
               selectedList,
-              subjectList
+              subjectList,
+              selectedTabList,
+              findList,
+              findTabList
             })
           }
         })
   },
-
+  handleScrollEnd(){
+   this.find.handleScrollEnd()
+    
+  },
+  handleScroll(e){
+    this.setData({
+      scrollTop:e.detail.scrollTop
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

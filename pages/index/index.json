@@ -6,7 +6,9 @@
     "category":"/components/index-category/category",
     "activity":"/components/index-activity/activity",
     "selected":"/components/index-selected/selected",
-    "subject":"/components/index-subject/subject"
+    "subject":"/components/index-subject/subject",
+    "find":"/components/index-find/find"
+    
   },
   "navigationBarTitleText": "首页"
 }

@@ -18,23 +18,23 @@ Component({
         id:1
       },{
         title:"音乐",
-        id:2
+        id:91
       },
       {
         title:"戏剧",
-        id:3
+        id:70
       },
       {
         title:"展览",
-        id:4
+        id:71
       },
       {
         title:"亲子",
-        id:5
+        id:86
       },
       {
         title:"幕后花絮",
-        id:6
+        id:57
       }
     ]
   },

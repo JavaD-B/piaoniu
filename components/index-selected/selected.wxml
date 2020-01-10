@@ -2,11 +2,13 @@
 <view class="selected-title">
 今日精选
 </view>
-<view class="selected-bar"></view>
+<view class="selected-bar" >
+<index-tabsbar scrollData="{{list}}" bind:getType="handleTap"/>
+</view>
 <view class="selected-cont">
 <selectedItem 
 wx:for="{{selectedList}}"
-wx:key="{{item.id}}"
+wx:key="id"
 selectedItem="{{item}}"
 />
 </view>

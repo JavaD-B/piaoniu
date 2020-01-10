@@ -7,7 +7,8 @@
 .selected-bar{
   height: 50rpx;
   width: 100%;
-  background-color: pink;
+  position: relative;
+  top: -34rpx;
 }
 .selected-cont{
   display: flex;

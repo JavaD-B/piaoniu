@@ -1,14 +1,18 @@
-<topBar style="justify-content:center;display:flex" />
-<tarbar scrollData="{{list}}"/>
-<choose />
-<view class="scroll">
-  <scroll-view bindscrolltolower="scrollDown" style="-webkit-overflow-scrolling:touch;height:100%" scroll-y='true'>
-    <item 
-      wx:for="{{listData}}"
-      wx:for-index='ind'
-      wx:for-item='item'
-      wx:key='ind'
-      data="{{item}}" 
-    ></item>
-  </scroll-view>
+<view style="position:relative;z-index:9999;overflow:hidden;background:white;">
+  <topBar style="justify-content:center;display:flex" />
+  <tarbar bind:myevent="onMyEvent" current='{{cuind}}' scrollData="{{list}}"/>
+  <choose bind:choosecl="choose" choosedata='{{choosedata}}' />
 </view>
+<view style="position:relative">
+  <frame class="{{!hid1?'ifarm animated slideInDown':'ifarm animated slideOutUp'}}" frame='1' list="{{Flist1}}" bind:chlist1="listone" />
+  <frame class="{{!hid2?'ifarm animated slideInDown':'ifarm animated slideOutUp'}}"  frame='2' list="{{Flist2}}" bind:chlist2="listtwo" />
+</view>
+<swiper bindchange='swiperchange' current='{{cuind}}' class="swiper">
+  <swiper-item
+    wx:for="{{list}}"
+    wx:for-item="item"
+    wx:key="id"
+   class='swiperItem'>
+    <listshow wx:if="{{item.id==nowindex}}" tid="{{item.id}}" listdata="{{showlist}}" class="scroll"></listshow>
+  </swiper-item>
+</swiper>
