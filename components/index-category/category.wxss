@@ -4,9 +4,11 @@
   justify-content: space-around;
   height: 280rpx;
   margin-top: 48rpx;
+  margin-right: 40rpx;
 }
 .category-item{
   width: 124rpx;
+  margin-right:2rpx;
   font-size: 26rpx;
   text-align: center;
 }

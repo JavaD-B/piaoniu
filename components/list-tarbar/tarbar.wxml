@@ -1,0 +1,19 @@
+<view class="page-section-spacing">
+	<scroll-view class="scroll" style="-webkit-overflow-scrolling:touch" scroll-x="true" scroll-left='{{navscroll}}' scroll-with-animation='true'>
+    <view class="contain">
+      <view 
+        wx:for='{{scrollData}}' 
+        wx:for-index="idx"
+        wx:for-item="item"
+        wx:key='idx'
+        class="{{idx===index?'active item':'item'}}"
+        id="item2"
+        data-index="{{idx}}"
+        bindtap="btnclick"
+      >
+       {{item.name}}
+      </view>
+    </view>
+    
+	</scroll-view>
+</view>

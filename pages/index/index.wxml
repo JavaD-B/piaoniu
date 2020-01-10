@@ -1,9 +1,11 @@
 <!--pages/index/index.wxml-->
-<view class="index-cont">
+	<scroll-view scroll-y="ture" class="index-cont"style="width:100%;height:{{height}}rpx"  bindscrolltolower="handleScrollEnd" bindscroll="handleScroll">
 <topbar/>
 <banner bannerList = "{{bannerList}}"/>
 <category categoryList="{{categoryList}}"/>
 <activity middleImg="{{middleImg}}"/>
-<selected selectedList="{{selectedList}}"/>
-<subject subjectList="{{subjectList}}"/>
-</view>
+<selected selectedList="{{selectedList}}" selectedTabList="{{selectedTabList}}"/>
+<!-- <subject subjectList="{{subjectList}}"/> -->
+<find findList="{{findList}}" findTabList="{{findTabList}}" id="index-find" scrollTop="{{scrollTop}}"/>
+</scroll-view>
+

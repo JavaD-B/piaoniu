@@ -1,6 +1,6 @@
 <view 
 class="subject"
-style="background: linear-gradient(to right ,{{color}}, {{toColor}})"
+style="background: linear-gradient(to right ,{{toColor}}, {{color}})"
 >
   <swiper circular="true" 
   class="subject-swiper" 

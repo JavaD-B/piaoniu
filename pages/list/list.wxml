@@ -1,2 +1,14 @@
-<!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<topBar style="justify-content:center;display:flex" />
+<tarbar scrollData="{{list}}"/>
+<choose />
+<view class="scroll">
+  <scroll-view bindscrolltolower="scrollDown" style="-webkit-overflow-scrolling:touch;height:100%" scroll-y='true'>
+    <item 
+      wx:for="{{listData}}"
+      wx:for-index='ind'
+      wx:for-item='item'
+      wx:key='ind'
+      data="{{item}}" 
+    ></item>
+  </scroll-view>
+</view>

@@ -1,1 +1,10 @@
 /* pages/list/list.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.scroll{
+  flex: 1;
+  overflow: auto;
+}

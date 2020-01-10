@@ -1,5 +1,5 @@
 <view class="mine">
-  <view class="login">
+  <view class="login" bindtap="handletap">
     <view class="avatar"></view>
     <view class="click-login">点击登录</view>
   </view>
