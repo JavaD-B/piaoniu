@@ -2,10 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/find/find",
-<<<<<<< HEAD
-=======
     "pages/find-detail/find-detail",
->>>>>>> master
     "pages/list/list",
     "pages/mine/mine"
   ],

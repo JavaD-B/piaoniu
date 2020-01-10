@@ -36,7 +36,6 @@ Page({
           },
 
           success :(res) =>{
-            console.log(res.data.floors);
             let bannerList = res.data.floors[0].data;
             let categoryList = res.data.floors[1].data;
             let middleImg = res.data.floors[4].data;
