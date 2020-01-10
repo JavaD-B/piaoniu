@@ -1,13 +1,21 @@
-<find-header></find-header>
-<find-banner banner="{{bannerData[0].banners}}"></find-banner>
-<find-campaigns campaigns="{{bannerData[1].campaigns}}"></find-campaigns>
-<find-featuredVideo featuredVideos="{{bannerData[2].featuredVideos}}"></find-featuredVideo>
-<find-classification
-  tag="{{tag}}"
-  bind:changeTag="changeTag"
-></find-classification>
-<find-List-wrap
-  listData="{{listData}}"
->
-</find-List-wrap>
+<find-header myType="{{myType}}" bind:changeType="changeType"></find-header>
+<view wx:if="{{myType==='hot'}}">
+  <find-banner banner="{{bannerData[0].banners}}"></find-banner>
+  <find-campaigns campaigns="{{bannerData[1].campaigns}}"></find-campaigns>
+  <find-featuredVideo featuredVideos="{{bannerData[2].featuredVideos}}"></find-featuredVideo>
+  <find-classification
+    tag="{{tag}}"
+    bind:changeTag="changeTag"
+  ></find-classification>
+  <find-List-wrap
+    listData="{{listData}}"
+  >
+  </find-List-wrap>
+</view>
+<view wx:else>
+  <find-List-wrap
+    listData="{{feedData}}"
+  >
+  </find-List-wrap>
+</view>
 

@@ -8,3 +8,9 @@ page{
   flex: 1;
   overflow: auto;
 }
+.swiper{
+  flex:1;
+}
+.swiperItem{
+  overflow: auto;
+}

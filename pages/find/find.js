@@ -5,12 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tag:"hot",
+    myType:"hot",
     bannerData:[],
-    nextPageKey:"",
-    pageSize:7,
+    listNextPageKey:"",
+    feedNextPageKey:"",
+    listPageSize:7,
+    feedPageSize:7,
     listData:[],
-    tag:1
+    feedData:[],
+    tag:1,
+    ifFirst:true
   },
 
   /**
@@ -33,27 +37,52 @@ Page({
         })
       }
     })
-    this.getListData()
+    this.getListData("listPageSize","listNextPageKey","listData")
   },
-  getListData(){
+  getListData(pageSizeType,keyType,type){
+    wx.showLoading({})
+    let url=""
+    if(this.data.tag===1){
+      url="https://api.piaoniu.com/v4/feed/hot"
+    }else{
+      url=`https://api.piaoniu.com/v1/tag/${this.data.tag}`
+    }
+    if(this.data.myType==="feed"){
+      url="https://api.piaoniu.com/v1/feed"
+    }
     wx.request({
-      url: 'https://api.piaoniu.com/v4/feed/hot?pageSize=7&nextPageKey=',
+      url,
       data:{
-        pageSize:this.data.pageSize,
-        nextPageKey:this.data.nextPageKey,
+        pageSize:this.data[pageSizeType],
+        nextPageKey:this.data[keyType],
       },
       method:'get',
       success:(res)=>{
         this.setData({
-          listData:[...this.data.listData,...res.data.data],
-          nextPageKey:res.data.nextPageKey
+          [type]:[...this.data[type],...res.data.data],
+          [keyType]:res.data.nextPageKey
+        },()=>{
+          wx.hideLoading({})
         })
       }
     })
   },
   changeTag(e){
     this.setData({
-      tag:e.detail.tag
+      tag:e.detail.tag,
+      listData:[],
+      listNextPageKey:""
+    },()=>{
+      this.getListData("listPageSize","listNextPageKey","listData")
+    })
+  },
+  changeType(e){
+    this.setData({
+      myType:e.detail.type
+    },()=>{
+      if(this.data.ifFirst&&this.data.myType==="feed"){
+        this.getListData("feedPageSize","feedNextPageKey","feedData")
+      }
     })
   },
   /**
@@ -88,7 +117,11 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    if(this.data.myType==="hot"){
+      this.getListData("listPageSize","listNextPageKey","listData")
+    }else{
+      this.getListData("feedPageSize","feedNextPageKey","feedData")
+    }
   },
 
   /**

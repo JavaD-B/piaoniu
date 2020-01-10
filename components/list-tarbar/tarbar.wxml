@@ -9,6 +9,7 @@
         class="{{idx===index?'active item':'item'}}"
         id="item2"
         data-index="{{idx}}"
+        data-categoryId="{{item.id}}"
         bindtap="btnclick"
       >
        {{item.name}}

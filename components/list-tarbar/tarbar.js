@@ -6,6 +6,9 @@ Component({
   properties: {
     scrollData: {           
       type: Array,
+    },
+    current:{
+      type:Number
     }
   },
   lifetimes:{
@@ -13,12 +16,28 @@ Component({
       
     },
   },
+  observers:{
+    'current':function(current){
+      this.setData({
+        index:current
+      })
+      this.changeX()
+    }
+  },
   methods: {
     btnclick:function(e){
+      //给父组件传递id属性
+      this.triggerEvent('myevent',{
+        nowindex:e.currentTarget.dataset.categoryid,
+        cuind:e.currentTarget.dataset.index
+      })
       this.setData({
         index:e.currentTarget.dataset.index
       })
-      let index = e.currentTarget.dataset.index
+      this.changeX()
+    },
+    changeX:function(){
+      let index = this.data.index
       let clientWidth = wx.getSystemInfoSync().windowWidth / 2
       let width = 0
       const query = wx.createSelectorQuery().in(this)

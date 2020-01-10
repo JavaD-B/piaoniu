@@ -1,14 +1,12 @@
 <topBar style="justify-content:center;display:flex" />
-<tarbar scrollData="{{list}}"/>
+<tarbar bind:myevent="onMyEvent" current='{{cuind}}' scrollData="{{list}}"/>
 <choose />
-<view class="scroll">
-  <scroll-view bindscrolltolower="scrollDown" style="-webkit-overflow-scrolling:touch;height:100%" scroll-y='true'>
-    <item 
-      wx:for="{{listData}}"
-      wx:for-index='ind'
-      wx:for-item='item'
-      wx:key='ind'
-      data="{{item}}" 
-    ></item>
-  </scroll-view>
-</view>
+<swiper bindchange='swiperchange' current='{{cuind}}' class="swiper">
+  <swiper-item
+    wx:for="{{list}}"
+    wx:for-item="item"
+    wx:key="id"
+   class='swiperItem'>
+    <listshow wx:if="{{item.id==nowindex}}" tid="{{item.id}}" class="scroll"></listshow>
+  </swiper-item>
+</swiper>
