@@ -11,15 +11,23 @@
 .find-item-header .find-item-user-pic{
   width: 72rpx;
   height: 72rpx;
-  overflow: hidden;
-  border-radius: 50%;
   margin-right: 12rpx;
+  position: relative;
 }
 .find-item-user-pic .user-avatar{
+  overflow: hidden;
+  border-radius: 50%;
   width: 100%;
   height: 100%;
 }
-
+.find-item-user-pic .user-tag{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30rpx;
+  height: 30rpx;
+  background-size: cover;
+}
 
 .find-item-header .find-item-user-name{
   font-size: 28rpx;
@@ -120,10 +128,16 @@
   font-size: 24rpx;
   line-height: 52rpx;
   padding: 0 20rpx;
+  border: 2rpx solid #e6e6e6;
+  margin-right: 10rpx;
 }
 .item-tags .tag-item:first-of-type{
   background-color: #fff1f4;
   color: #ff276c;
+  border: none;
+}
+.add-bottom{
+  margin-bottom: 54rpx;
 }
 .icon-yiqi{
   width: 24rpx;
@@ -135,6 +149,7 @@
   background-color: #f3f4f6;
   display: flex;
   padding: 10rpx;
+  margin-bottom: 20rpx;
 }
 .item-detail .poster{
   width: 76rpx;

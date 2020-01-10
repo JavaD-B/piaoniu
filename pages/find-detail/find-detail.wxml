@@ -1,0 +1,8 @@
+<find-list-item
+  comment="{{comment}}"
+  ifshowComment="{{ifshowComment}}"
+>
+</find-list-item>
+<find-detail-comment>
+
+</find-detail-comment>

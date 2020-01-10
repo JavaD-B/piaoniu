@@ -1,21 +1,35 @@
+<view>
 <find-header myType="{{myType}}" bind:changeType="changeType"></find-header>
-<view wx:if="{{myType==='hot'}}">
-  <find-banner banner="{{bannerData[0].banners}}"></find-banner>
-  <find-campaigns campaigns="{{bannerData[1].campaigns}}"></find-campaigns>
-  <find-featuredVideo featuredVideos="{{bannerData[2].featuredVideos}}"></find-featuredVideo>
-  <find-classification
-    tag="{{tag}}"
-    bind:changeTag="changeTag"
-  ></find-classification>
-  <find-List-wrap
-    listData="{{listData}}"
-  >
-  </find-List-wrap>
-</view>
-<view wx:else>
-  <find-List-wrap
-    listData="{{feedData}}"
-  >
-  </find-List-wrap>
+<view style="overflow-x: hidden;width: 100%;">
+  <view wx:if="{{myType==='hot'}}">
+    <find-banner banner="{{bannerData[0].banners}}"></find-banner>
+    <find-campaigns campaigns="{{bannerData[1].campaigns}}"></find-campaigns>
+    <find-featuredVideo featuredVideos="{{bannerData[2].featuredVideos}}"></find-featuredVideo>
+    <find-classification
+      tag="{{tag}}"
+      bind:changeTag="changeTag"
+    ></find-classification>
+    <find-List-wrap
+      listData="{{listData}}"
+      ifshowComment="{{ifshowComment}}"
+    >
+    </find-List-wrap>
+  </view>
+  <view wx:else>
+    <find-List-wrap
+      wx:if="{{ifLogin}}"
+      listData="{{feedData}}"
+    >
+    </find-List-wrap>
+    <view
+      wx:else
+      class="not-login"
+    >
+      <image class="logo" src="/source/noLogin.png" />
+      <text class="tip">登录查看关注内容哦~</text>
+      <view class="login">去授权登录</view>
+    </view>
+  </view>
+  </view>
 </view>
 

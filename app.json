@@ -2,31 +2,47 @@
   "pages": [
     "pages/index/index",
     "pages/find/find",
+<<<<<<< HEAD
+=======
+    "pages/find-detail/find-detail",
+>>>>>>> master
     "pages/list/list",
     "pages/mine/mine"
   ],
-
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black"
   },
-  
-  "tabBar":{
-    "list":[{
-      "pagePath":"pages/index/index",
-      "text":"推荐"
-    },{
-      "pagePath": "pages/list/list",
-      "text": "演出"
-    },{
-      "pagePath": "pages/find/find",
-      "text": "发现"
-    },{
-      "pagePath": "pages/mine/mine",
-      "text": "我的"
-    }],
-  "color":"#000"
+  "tabBar": {
+    "selectedColor": "#ea4d71",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath":"/source/home.png",
+        "selectedIconPath":"/source/home-active.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "演出",
+        "iconPath":"/source/list.png",
+        "selectedIconPath":"/source/list-active.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath":"/source/find.png",
+        "selectedIconPath":"/source/find-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath":"/source/mine.png",
+        "selectedIconPath":"/source/mine-active.png"
+      }
+    ],
+    "color": "#000"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

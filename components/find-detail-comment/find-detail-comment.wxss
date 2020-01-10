@@ -1,0 +1,37 @@
+@import "/source/icon/icon.wxss";
+.comment-wrap{
+  box-sizing: border-box;
+  height: 120rpx;
+  width: 100%;
+  border-top: 1rpx solid #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 28rpx;
+}
+.comment-input{
+  height: 64rpx;
+  width: 610rpx;
+  border: 1rpx solid #e4e4e4;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  color: #c7c7c7;
+  padding: 18rpx 30rpx;
+  box-sizing: border-box;
+  line-height: 26rpx;
+}
+.add-zan{
+  margin-left: 26rpx;
+  font-size: 40rpx;
+  color: #999999;
+  position: relative;
+}
+.add-zan .num{
+  position: absolute;
+  right: -10rpx;
+  top: -20rpx;
+  font-size: 24rpx;
+}
