@@ -56,6 +56,7 @@ page {
   line-height: 22px;
   color: #fff;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -329,8 +330,15 @@ page {
   color: #333;
 }
 
-.buy-note {
+.buy-note, .introduce {
   overflow: hidden;
   background-color: #fff;
   margin-top: 10px;
+  padding-left: 15px;
+}
+
+.buy-title {
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 700;
 }

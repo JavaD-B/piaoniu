@@ -1,6 +1,11 @@
 .find-classification-list{
   height: 76rpx;
   width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 88rpx;
+  left: 0;
+  z-index: 999;
 }
 .find-classification-list-wrap{
   height: 76rpx;

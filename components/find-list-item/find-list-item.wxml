@@ -1,15 +1,87 @@
+<wxs module="filter" src="../../filters/filter.wxs"></wxs>
 <view class="find-list-item">
   <view class="find-item-header">
     <view class="find-item-user-pic">
-      <image src="https://img.piaoniu.com/video/ab74e0cf70751918bcf719a0701925ea5f20b7e8.jpg"></image>
+      <image class="user-avatar" src="{{comment.content.user.avatar}}"></image>
     </view>
-    <text class="find-item-user-name">票牛小秘书</text>
-    <view class="find-item-user-tag">官方</view>
+    <text class="find-item-user-name">{{comment.content.user.userName}}</text>
+    <view
+      wx:if="{{comment.content.user.level===99}}"
+      class="find-item-user-tag official"
+    >
+      官方
+    </view>
+    <view
+      wx:else
+      class="find-item-user-tag user"
+    >
+      {{filter.getLevel(comment.content.user.level)}}
+    </view>
   </view>
   <view class="find-item-content">
-  
+    <view class="item-stars" wx:if="{{comment.content.rank!==0}}">
+      我评论：
+      <view
+        class="star-list"
+        style="background-image:url(https://dn-piaoniu-static.qbox.me/pc/ui/img/star-empty.ebc71406.png)"
+      >
+        <view class="star-bg" style="width:{{comment.content.rank/10*120+'rpx'}}"></view>
+      </view>
+    </view>
+    <view class="item-text">
+      {{comment.content.content}}
+    </view>
+    <view
+      class="item-pic"
+      wx:if="{{comment.content.images.length>0}}"
+    >
+      <image
+        class="pic"
+        wx:for="{{comment.content.images}}"
+        wx:key="index"
+        src="{{item.url}}"
+      ></image>
+    </view>
+    <view
+      class="item-video"
+      wx:if="{{comment.content.videos.length>0}}"
+      style="background-image:url({{comment.content.videos[0].poster}})"
+    >
+      <view class="video-play iconfont icon-play"></view>
+      <view class="video-time">{{filter.timeLengthFilter(comment.content.videos[0].duration)}}</view>
+    </view>
+    <view
+      class="item-tags"
+      wx:if="{{comment.content.group}}"
+    >
+      <view
+        class="tag-item"
+      >
+        <image class="icon-yiqi" src="/source/yiqi.png"/>
+      {{comment.content.group.name}}
+      </view>
+    </view>
+    <view class="item-detail" wx:if="{{comment.content.activityId!==0}}">
+      <image class="poster" src="{{comment.content.activity.poster}}"></image>
+      <view class="detail">
+        <text class="title">{{comment.content.activity.shortname}}</text>
+        <text class="time">{{comment.content.activity.timeRange}}</text>
+      </view>
+    </view>
   </view>
   <view class="find-item-footer">
-  
+    <view class="find-item-footer-left">
+      {{filter.numFilter(comment.content.clickNum)}} 阅读
+    </view>
+    <view class="find-item-footer-right">
+      <view class="footer-zan">
+        <view class="iconfont icon-dianzan"></view>
+        {{filter.numFilter(comment.content.likes)}}
+      </view>
+      <view class="footer-comment">
+        <view class="iconfont icon-Temp-"></view>
+        {{comment.content.replyCount>0?filter.numFilter(comment.content.replyCount):"回复"}}
+      </view>
+    </view>
   </view>
 </view>
