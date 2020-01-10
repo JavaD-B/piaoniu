@@ -1,17 +1,17 @@
 <view class="wrap">
   <view class="map">
-    <map 
-      id="map"
-      show-location
-      longitude="{{addInfo.longitude}}"
-      latitude="{{addInfo.latitude}}"
-      >
-        <cover-image 
-          src="/source/add-center.png" 
-          class="cover-center" 
-          bindtap="handleCoverTap"
-        />
-      </map>
+    <map id="map" 
+      show-location 
+      longitude="{{addInfo.longitude}}" 
+      latitude="{{addInfo.latitude}}" 
+      markers="{{marker}}"
+    >
+      <cover-image 
+        src="/source/add-center.png" 
+        class="cover-center" 
+        bindtap="handleCoverTap" 
+      />
+    </map>
   </view>
 
   <view class="nav">
