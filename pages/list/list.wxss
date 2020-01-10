@@ -16,7 +16,7 @@ page{
 }
 .ifarm{
   position: absolute;
-  top: 0;
+  top: -100%;
   z-index: 1;
   width: 100%;
 }
@@ -24,12 +24,13 @@ page{
   from {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible;
+    /* visibility: visible; */
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
@@ -37,12 +38,13 @@ page{
   from {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible;
+    /* visibility: visible; */
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    visibility: visible;
   }
 }
 
@@ -54,6 +56,7 @@ page{
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    /* visibility: visible; */
   }
 
   to {
@@ -67,6 +70,7 @@ page{
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    /* visibility: visible; */
   }
 
   to {

@@ -1,4 +1,4 @@
-// components/list-show/showList.js
+const app = getApp()
 Component({
   properties: {
     tid:{
@@ -15,7 +15,7 @@ Component({
   },
   observers:{
     "listdata":function(){
-      console.log(this.data.listdata)
+      // console.log(this.data.listdata)
       this.getdata2()
     }
   },
@@ -33,7 +33,7 @@ Component({
       let result = wx.request({
         url: `https://m.piaoniu.com/api/v3/activities?pageIndex=${index}&categoryId=${categoryId}&time=&sort=${listdata[0]}&seatMap=false&highestPrice=&lowestPrice=&time=${listdata[1]}`,
         success: (result) => {
-          // console.log(result.data.data)
+          console.log(result.data.data)
             this.setData({
               listData:[
                 ...this.data.listData,
@@ -61,6 +61,12 @@ Component({
             }) 
         }
       })
+    },
+    handleclick:function(e){
+      app.setId(e.currentTarget.dataset.activityid)
+      wx.navigateTo({
+        url: '/components/detail/detail',
+      })   
     },
     scrollDown(){
       this.setData({

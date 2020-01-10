@@ -5,6 +5,8 @@
       wx:for-index='ind'
       wx:for-item='item'
       wx:key='ind'
+      data-activityId="{{item.id}}"
+      bindtap='handleclick'    
       data="{{item}}" 
   ></item>
 </scroll-view>
