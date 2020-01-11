@@ -1,3 +1,4 @@
+<view>
 <view class="find-classification-list">
   <scroll-view
     class="find-classification-list-wrap"
@@ -14,4 +15,5 @@
       data-tag="{{item.id}}"
     >{{item.title}}</view>
   </scroll-view>
+</view>
 </view>

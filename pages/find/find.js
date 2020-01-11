@@ -16,7 +16,9 @@ Page({
     tag:1,
     ifFirst:true,
     ifLogin:false,
-    ifshowComment:true
+    ifshowComment:true,
+    menuTop:0,
+    menuFixed:false
   },
 
   /**
@@ -30,12 +32,44 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    var _this=this
+    var query=wx.createSelectorQuery()
+    query.select(".classification-list").boundingClientRect();
+    query.selectViewport().scrollOffset();
+    query.exec(function(res) {
+      _this.setData({
+        menuTop: res[0].top
+      })
+    })
+    this.start()
+  },
+  start(){
+    wx.showNavigationBarLoading()
+    this.setData({
+      myType:"hot",
+      bannerData:[],
+      listNextPageKey:"",
+      feedNextPageKey:"",
+      listPageSize:7,
+      feedPageSize:7,
+      listData:[],
+      feedData:[],
+      tag:1,
+      ifFirst:true,
+      ifLogin:false,
+      ifshowComment:true,
+      menuTop:0,
+      menuFixed:false
+    })
     wx.request({
       url: 'https://www.beetleworld.xyz/app/v1/feed/banner',
       method:'get',
       success:(res)=>{
         this.setData({
           bannerData:res.data
+        },()=>{
+          wx.stopPullDownRefresh()
+          wx.hideNavigationBarLoading()
         })
       }
     })
@@ -123,12 +157,16 @@ Page({
   onUnload: function () {
 
   },
-
+  onPageScroll:function(e){
+    this.setData({
+      menuFixed:(this.data.menuTop < e.scrollTop)
+    })
+  },
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    this.start()
   },
 
   /**

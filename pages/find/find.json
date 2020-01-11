@@ -7,5 +7,7 @@
     "find-classification":"/components/find-classification/find-classification",
     "find-List-wrap":"/components/find-List-wrap/find-List-wrap"
   },
-  "navigationBarTitleText": "发现"
+  "navigationBarTitleText": "发现",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#eee"
 }

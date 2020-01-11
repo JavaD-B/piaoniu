@@ -1,11 +1,12 @@
 <view>
 <find-header myType="{{myType}}" bind:changeType="changeType"></find-header>
-<view style="overflow-x: hidden;width: 100%;">
-  <view wx:if="{{myType==='hot'}}">
+<view style="overflow-x: hidden;width: 100%;padding-top:88rpx;background:#eee;">
+  <view wx:if="{{myType==='hot'}}" style="background:#fff;">
     <find-banner banner="{{bannerData[0].banners}}"></find-banner>
     <find-campaigns campaigns="{{bannerData[1].campaigns}}"></find-campaigns>
     <find-featuredVideo featuredVideos="{{bannerData[2].featuredVideos}}"></find-featuredVideo>
     <find-classification
+      class="classification-list {{menuFixed?'isfixed':'isrelative'}}"
       tag="{{tag}}"
       bind:changeTag="changeTag"
     ></find-classification>

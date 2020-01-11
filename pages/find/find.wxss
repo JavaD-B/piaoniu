@@ -4,6 +4,16 @@ page{
   overflow-x: hidden;
   width: 100%;
 }
+
+.isfixed{
+  position: fixed;
+  top: 88rpx;
+  left: 0;
+  z-index: 999;
+}
+.isrelative{
+  position: relative;
+}
 .not-login{
   position: absolute;
   left: 0;
