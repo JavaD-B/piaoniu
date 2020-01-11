@@ -1,0 +1,36 @@
+.comment{
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.comment-list-header{
+  padding:0 30rpx;
+  height: 80rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #fafafa;
+  display: flex;
+  justify-content: space-between;
+}
+.comment-list-header .repeat,.comment-list-header .zan{
+  line-height: 80rpx;
+}
+.comment-list-header .repeat{
+  font-size: 30rpx;
+  color: #000000;
+}
+.comment-list-header .zan{
+  font-size: 26rpx;
+  color: #9f9f9f;
+}
+
+.comment-null{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 158rpx;
+  padding-bottom: 200rpx;
+}
+.comment-list{
+  min-height: 158rpx;
+  padding-bottom: 200rpx;
+}
+

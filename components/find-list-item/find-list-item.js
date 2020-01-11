@@ -19,6 +19,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    goDetail(e){
+      wx.navigateTo({
+        url: '/components/detail/detail?activityId='+e.currentTarget.dataset.aid,
+      })
+    }
   }
 })

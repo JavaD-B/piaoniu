@@ -3,6 +3,14 @@
   ifshowComment="{{ifshowComment}}"
 >
 </find-list-item>
-<find-detail-comment>
+<find-comment-list
+  commentList="{{commentList}}"
+  like="{{like}}"
+  replyCount="{{replyCount}}"
+>
+</find-comment-list>
+<find-detail-comment
+  like="{{like}}"
+>
 
 </find-detail-comment>

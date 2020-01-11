@@ -1,4 +1,5 @@
 // pages/find/find.js
+var _ = require("underscore")
 Page({
 
   /**
@@ -13,6 +14,8 @@ Page({
     feedPageSize:7,
     listData:[],
     feedData:[],
+    listHasMore:true,
+    feedHasMore:true,
     tag:1,
     ifFirst:true,
     ifLogin:false,
@@ -54,6 +57,8 @@ Page({
       feedPageSize:7,
       listData:[],
       feedData:[],
+      listHasMore:true,
+      feedHasMore:true,
       tag:1,
       ifFirst:true,
       ifLogin:false,
@@ -75,7 +80,7 @@ Page({
     })
     this.getListData("listPageSize","listNextPageKey","listData")
   },
-  getListData(pageSizeType,keyType,type){
+  getListData(pageSizeType,keyType,type,hasMore){
     wx.showLoading({})
     let url=""
     if(this.data.tag===1){
@@ -99,7 +104,8 @@ Page({
             this.setData({
               [type]:[...this.data[type],...res.data.data],
               [keyType]:res.data.nextPageKey,
-              ifLogin:true
+              ifLogin:true,
+              [hasMore]:res.data.hasMore
             },()=>{
               wx.hideLoading({})
             })
@@ -174,9 +180,31 @@ Page({
    */
   onReachBottom: function () {
     if(this.data.myType==="hot"){
-      this.getListData("listPageSize","listNextPageKey","listData")
+      if(this.data.listHasMore){
+        this.getListData("listPageSize","listNextPageKey","listData","listHasMore")
+      }else{
+        wx.showToast({
+          title: "没有更多了哟~",
+          icon:"none",
+          duration:0
+        })
+        setTimeout(()=>{
+          wx.hideToast()
+        },1000)
+      }
     }else{
-      this.getListData("feedPageSize","feedNextPageKey","feedData")
+      if(this.data.feedHasMore){
+        this.getListData("feedPageSize","feedNextPageKey","feedData","feedHasMore")
+      }else{
+        wx.showToast({
+          title: "没有更多了哟~",
+          icon:"none",
+          duration:0
+        })
+        setTimeout(()=>{
+          wx.hideToast()
+        },1000)
+      }
     }
   },
 

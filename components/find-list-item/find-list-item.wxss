@@ -3,6 +3,9 @@
   padding: 0 28rpx;
   background-color: #fff;
 }
+.find-list-item.add{
+  padding-bottom: 70rpx;
+}
 .find-item-header{
   padding: 30rpx 0 23rpx;
   display: flex;

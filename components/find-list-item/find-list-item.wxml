@@ -1,5 +1,5 @@
 <wxs module="filter" src="../../filters/filter.wxs"></wxs>
-<view class="find-list-item">
+<view class="find-list-item {{!ifshowComment&&'.add'}}">
   <view class="find-item-header">
     <view class="find-item-user-pic">
       <image class="user-avatar" src="{{comment.content.user.avatar}}"></image>
@@ -51,7 +51,12 @@
       <view class="video-play iconfont icon-play"></view>
       <view class="video-time">{{filter.timeLengthFilter(comment.content.videos[0].duration)}}</view>
     </view>
-    <view class="item-detail" wx:if="{{comment.content.activityId!==0&&comment.content.relativeActivityIds[0]!==0}}">
+    <view
+      class="item-detail"
+      wx:if="{{comment.content.activity}}"
+      bindtap="goDetail"
+      data-aid="{{comment.content.activityId?comment.content.activityId:comment.content.relativeActivityIds[0]}}"
+    >
       <image class="poster" src="{{comment.content.activity.poster||comment.content.relativeActivities[0].poster}}"></image>
       <view class="detail">
         <text class="title">{{comment.content.activity.shortname||comment.content.relativeActivities[0].shortname}}</text>
@@ -59,7 +64,7 @@
       </view>
     </view>
     <view
-      class="item-tags {{!ifshowComment?'add-bottom':''}}"
+      class="item-tags"
       wx:if="{{comment.content.group}}"
     >
       <view

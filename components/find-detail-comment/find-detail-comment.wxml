@@ -1,6 +1,6 @@
 <view class="comment-wrap">
   <view class="comment-input">点击登录后才能评论哦</view>
   <view class="iconfont icon-dianzan add-zan">
-    <text class="num">8</text>
+    <text class="num">{{like}}</text>
   </view>
 </view>

@@ -1,0 +1,51 @@
+.item-left{
+  width: 74rpx;
+  height: 100%;
+}
+.item-left .item-poster{
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+}
+.item-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-right .title{
+  display: flex;
+  width: 100%;
+  height: 56rpx;
+  justify-content: space-between;
+}
+.item-right .title .title-left{
+  display: flex;
+  font-size: 26rpx;
+  color: #262626;
+}
+.username{
+  max-width: 240rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-right .title .title-left .tag{
+  width: 64rpx;
+  height: 28rpx;
+  background-color: #f3c155;
+  color: #fff;
+  margin-left: 10rpx;
+  font-size: 20rpx;
+  text-align: center;
+  border-radius: 14rpx;
+}
+.item-right .title .addtime{
+  color: #999999;
+  font-size: 22rpx;
+}
+
+.item-right .content{
+  flex: 1;
+  border-bottom: 1rpx solid #fafafa;
+}

@@ -1,10 +1,12 @@
-// components/find-detail-comment/find-detail-comment.js
+// components/find-comment-list/find-comment-list.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    like:Number
+    commentList:Array,
+    like:Number,
+    replyCount:Number
   },
 
   /**

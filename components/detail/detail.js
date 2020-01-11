@@ -16,7 +16,7 @@ Component({
       })
 
       wx.request({
-        url: 'https://api.piaoniu.com/v1/activityPageDetail?activityId=129375&mweb=false&supportSpeedPackBuy=true',
+        url: 'https://www.beetleworld.xyz/app/v1/activityPageDetail?activityId=129375&mweb=false&supportSpeedPackBuy=true',
         success:  (res) => {
           this.setData({
             detailData: res.data

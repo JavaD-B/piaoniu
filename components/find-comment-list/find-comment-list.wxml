@@ -1,0 +1,23 @@
+<view class="comment">
+  <view class="comment-list-header">
+    <text class="repeat">全部回复({{replyCount}})</text>
+    <text class="zan">赞 {{like}}</text>
+  </view>
+  <view class="comment-list"
+    wx:if="{{commentList.length>0}}"
+  >
+    <view
+      class="comment-item"
+      wx:for="{{commentList}}"
+      wx:key="id"
+    >
+      <find-comment-item item="{{item}}" time="{{item.addTime}}" />
+    </view>
+  </view>
+  <view
+    class="comment-null"
+    wx:else
+  >
+    评论区空空如也~
+  </view>
+</view>

@@ -23,7 +23,7 @@ Component({
   methods: {
     goDetail(e){
       wx.navigateTo({
-        url: '/pages/find-detail/find-detail?id='+e.currentTarget.dataset.id,
+        url: '/pages/find-detail/find-detail?id='+e.currentTarget.dataset.id+'&&type='+e.currentTarget.dataset.type,
       })
     }
   }

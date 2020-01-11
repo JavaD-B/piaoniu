@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "find-comment-item":"/components/find-comment-item/find-comment-item"
+  }
+}

@@ -1,0 +1,15 @@
+<view style="display:flex;padding: 30rpx;min-height: 158rpx;">
+<view class="item-left">
+  <image class="item-poster" src="{{item.user.avatar}}"></image>
+</view>
+<view class="item-right">
+  <view class="title">
+    <view class="title-left">
+      <text class="username">{{item.user.userName}}</text>
+      <view class="tag">{{item.user.level>0?'Lv '+item.user.level:'新手'}}</view>
+    </view>
+    <view class="addtime">{{addTime}}</view>
+  </view>
+  <view class="content">{{item.content}}</view>
+</view>
+</view>
