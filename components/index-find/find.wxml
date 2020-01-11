@@ -7,8 +7,8 @@
 	<index-tabsbar scrollData="{{list}}" bind:getType="handleTap" class="find-tabsbar 	{{scrollTop > 920 ? 'tabsbar-position' : ''}}"  />
 
 
-
-	<view class="cont-wrapper" style="display:flex">
+ 
+ 	<view class="cont-wrapper" style="display:flex">
 		<view class="find-cont-1">
 
 			<view class="find-item" wx:for="{{contOne}}" wx:key="id">
@@ -16,7 +16,7 @@
 				<view class="find-item-1" wx:if="{{item.type===1}}">
 
 					<view class="discount"  wx:if="{{item.data.discountRate}}" > 
-						<view class="text">
+						<view class="discount-text">
 						<view class="num">8</view>
 						<view class="fraction">.3</view>
 						<view class="unit">折</view>
@@ -86,7 +86,7 @@
 
 				<view class="find-item-1" wx:if="{{item.type===1}}">
 								<view class="discount"  wx:if="{{item.data.discountRate}}" > 
-						<view class="text">
+						<view class="discount-text">
 						<view class="num">9</view>
 						<view class="fraction">.4</view>
 						<view class="unit">折</view>
@@ -147,6 +147,8 @@
 			</view>
 		</view>
 		</view>
+
+
 
 
 

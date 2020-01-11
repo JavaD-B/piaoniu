@@ -3,6 +3,7 @@
   <view class="find-item-header">
     <view class="find-item-user-pic">
       <image class="user-avatar" src="{{comment.content.user.avatar}}"></image>
+      <view class="user-tag" wx:if="{{comment.content.user.badgeIcon}}" style="background-image:url({{comment.content.user.badgeIcon}})"></view>
     </view>
     <text class="find-item-user-name">{{comment.content.user.userName}}</text>
     <view
@@ -19,7 +20,7 @@
     </view>
   </view>
   <view class="find-item-content">
-    <view class="item-stars" wx:if="{{comment.content.rank!==0}}">
+    <view class="item-stars" wx:if="{{comment.content.rank!==0&&ifshowComment}}">
       我评论：
       <view
         class="star-list"
@@ -50,8 +51,15 @@
       <view class="video-play iconfont icon-play"></view>
       <view class="video-time">{{filter.timeLengthFilter(comment.content.videos[0].duration)}}</view>
     </view>
+    <view class="item-detail" wx:if="{{comment.content.activityId!==0&&comment.content.relativeActivityIds[0]!==0}}">
+      <image class="poster" src="{{comment.content.activity.poster||comment.content.relativeActivities[0].poster}}"></image>
+      <view class="detail">
+        <text class="title">{{comment.content.activity.shortname||comment.content.relativeActivities[0].shortname}}</text>
+        <text class="time">{{comment.content.activity.timeRange||comment.content.relativeActivities[0].timeRange}}</text>
+      </view>
+    </view>
     <view
-      class="item-tags"
+      class="item-tags {{!ifshowComment?'add-bottom':''}}"
       wx:if="{{comment.content.group}}"
     >
       <view
@@ -60,16 +68,17 @@
         <image class="icon-yiqi" src="/source/yiqi.png"/>
       {{comment.content.group.name}}
       </view>
-    </view>
-    <view class="item-detail" wx:if="{{comment.content.activityId!==0}}">
-      <image class="poster" src="{{comment.content.activity.poster}}"></image>
-      <view class="detail">
-        <text class="title">{{comment.content.activity.shortname}}</text>
-        <text class="time">{{comment.content.activity.timeRange}}</text>
-      </view>
+      <view
+        class="tag-item"
+        wx:if="{{!ifshowComment}}"
+        wx:for="{{comment.content.tags}}"
+        wx:key="id"
+      >{{item.name}}</view>
     </view>
   </view>
-  <view class="find-item-footer">
+  <view class="find-item-footer"
+    wx:if="{{ifshowComment}}"
+  >
     <view class="find-item-footer-left">
       {{filter.numFilter(comment.content.clickNum)}} 阅读
     </view>

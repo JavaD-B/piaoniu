@@ -1,6 +1,7 @@
 /* components/list-choose/choose.wxss */
 .choose{
-  box-shadow: 0 8rpx 0 rgba(250,250,250,.15);
+  box-shadow: 0 6rpx 0 rgba(250,250,250,.15);
+  border-bottom: 2rpx solid rgba(250,250,250);
 }
 .choose-wrap{
   display: flex;

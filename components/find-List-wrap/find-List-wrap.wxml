@@ -25,6 +25,6 @@
         </view>
       </view>
     </scroll-view>
-    <find-list-item comment="{{item}}" wx:else />
+    <find-list-item comment="{{item}}" ifshowComment="{{ifshowComment}}" data-id="{{item.content.id}}" bind:tap="goDetail" wx:else />
   </view>
 </view>

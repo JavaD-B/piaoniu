@@ -30,13 +30,12 @@ Page({
     
     
         wx.request({
-          url: 'https://api.piaoniu.com/v3/home?type=4', //仅为示例，并非真实的接口地址
+          url: 'https://www.beetleworld.xyz/app/v3/home?type=4', //仅为示例，并非真实的接口地址
           header: {
             'content-type': 'application/json' // 默认值
           },
 
           success :(res) =>{
-            console.log(res.data.floors);
             let bannerList = res.data.floors[0].data;
             let categoryList = res.data.floors[1].data;
             let middleImg = res.data.floors[4].data;
