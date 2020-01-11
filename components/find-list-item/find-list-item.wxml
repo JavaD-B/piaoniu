@@ -53,7 +53,7 @@
     </view>
     <view
       class="item-detail"
-      wx:if="{{comment.content.activity}}"
+      wx:if="{{comment.content.activity||comment.content.relativeActivities.length>0}}"
       bindtap="goDetail"
       data-aid="{{comment.content.activityId?comment.content.activityId:comment.content.relativeActivityIds[0]}}"
     >
