@@ -16,7 +16,7 @@ page {
   background-color: #292138;
   position: absolute;
   overflow: hidden;
-  min-height: 180px;
+  min-height: 180px; 
 }
 
 .header-image canvas {
@@ -356,7 +356,7 @@ page {
   color: rgb(85,176,238);
 }
 
-.comment {
+.all-comment {
   background: #fff;
   margin-top: 10px;
   padding-left: 15px;

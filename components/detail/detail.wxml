@@ -99,9 +99,9 @@
       <view class="clickMore" bindtap="clickMore" style="display: {{moreButton}}">展开更多</view>
     </view>
 
-    <view class="comment">
+    <view class="all-comment">
       <view class="com-top">
-        <view class="allCom">所有评论()</view>
+        <view class="allCom">所有评论({{commentCount}})</view>
         <view class="wirteCom">+写评论</view>
       </view>
       <view class="clickMore" bindtap="checkCom">查看相关评论>></view>

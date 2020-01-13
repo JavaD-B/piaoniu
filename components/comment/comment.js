@@ -1,4 +1,6 @@
 // components/comment/comment.js
+var app = getApp()
+
 Component({
   /**
    * 组件的属性列表
@@ -27,16 +29,16 @@ Component({
         title: '全部评论'
       })
 
+      let activityId = app.activityid
+
       wx.request({
-        url: `https://m.piaoniu.com/api/v3/reviews?activityId=129375&pageIndex=1&pageSize=10`,
+        url: `https://m.piaoniu.com/api/v3/reviews?activityId=${activityId}&pageIndex=1&pageSize=10`,
         success: (res) => {
-          console.log(res.data)
           this.setData({
             commentList: res.data
           })
         }
       })
-
     }
   }
 })
