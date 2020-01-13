@@ -1,11 +1,9 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/find/find",
-<<<<<<< HEAD
-=======
     "pages/find-detail/find-detail",
->>>>>>> master
     "pages/list/list",
     "pages/mine/mine"
   ],
@@ -20,26 +18,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "推荐",
-        "iconPath":"/source/home.png",
-        "selectedIconPath":"/source/home-active.png"
+        "iconPath": "/source/home.png",
+        "selectedIconPath": "/source/home-active.png"
       },
       {
         "pagePath": "pages/list/list",
         "text": "演出",
-        "iconPath":"/source/list.png",
-        "selectedIconPath":"/source/list-active.png"
+        "iconPath": "/source/list.png",
+        "selectedIconPath": "/source/list-active.png"
       },
       {
         "pagePath": "pages/find/find",
         "text": "发现",
-        "iconPath":"/source/find.png",
-        "selectedIconPath":"/source/find-active.png"
+        "iconPath": "/source/find.png",
+        "selectedIconPath": "/source/find-active.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath":"/source/mine.png",
-        "selectedIconPath":"/source/mine-active.png"
+        "iconPath": "/source/mine.png",
+        "selectedIconPath": "/source/mine-active.png"
       }
     ],
     "color": "#000"

@@ -1,15 +1,12 @@
 //app.js
 App({
-<<<<<<< HEAD
   addInfo: {
     latitude: ''
   },
   activityid:{
     id:'',
+    star:''
   },     
-=======
-  addInfo: {},
->>>>>>> master
   setInfo(addInfo) {
     this.addInfo = addInfo
   },

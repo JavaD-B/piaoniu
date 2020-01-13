@@ -6,6 +6,7 @@
       wx:for-item='item'
       wx:key='ind'
       data-activityId="{{item.id}}"
+      data-star="{{item.star}}"
       bindtap='handleclick'    
       data="{{item}}" 
   ></item>
