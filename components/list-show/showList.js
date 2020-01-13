@@ -23,6 +23,7 @@ Component({
     listData:[],
     total:null,
     index:1,
+    flag:true  
   },
   methods: {
     getdata(){
@@ -33,14 +34,16 @@ Component({
       let result = wx.request({
         url: `https://www.beetleworld.xyz/app/v3/activities?pageIndex=${index}&categoryId=${categoryId}&time=&sort=${listdata[0]}&seatMap=false&highestPrice=&lowestPrice=&time=${listdata[1]}`,
         success: (result) => {
-          console.log(result.data.data)
+          // console.log(result.data.data)
             this.setData({
               listData:[
                 ...this.data.listData,
-                ...result.data.data
+                ...result.data.data        
               ],
+              flag:true,
               total:Math.ceil(result.data.totalNum/15)
             }) 
+            wx.hideLoading({})    
         }
       })
     },
@@ -50,7 +53,7 @@ Component({
       let categoryId=this.data.tid
       let listdata=this.data.listdata
       let result = wx.request({
-        url: `https://www.beetleworld.xyz/app/api/v3/activities?pageIndex=${index}&categoryId=${categoryId}&time=&sort=${listdata[0]}&seatMap=false&highestPrice=&lowestPrice=&time=${listdata[1]}`,
+        url: `https://www.beetleworld.xyz/app/v3/activities?pageIndex=${index}&categoryId=${categoryId}&time=&sort=${listdata[0]}&seatMap=false&highestPrice=&lowestPrice=&time=${listdata[1]}`,
         success: (result) => {
           // console.log(result.data.data)
             this.setData({
@@ -63,16 +66,27 @@ Component({
       })
     },
     handleclick:function(e){
-      app.setId(e.currentTarget.dataset.activityid)
+      let id=e.currentTarget.dataset.activityid  
+      let star=e.currentTarget.dataset.star
+      
+      app.setId({
+        id,
+        star
+      })
       wx.navigateTo({
         url: '/components/detail/detail',
       })   
     },
     scrollDown(){
-      this.setData({
-        index:this.data.index+1,
-      })
-      this.getdata()
+      wx.showLoading({})
+      if(this.data.flag){
+        this.setData({
+          index:this.data.index+1,
+          flag:false
+        })
+        this.getdata() 
+      }
+      
     }
   }
 })

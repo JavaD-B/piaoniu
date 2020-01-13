@@ -5,6 +5,7 @@ App({
   },
   activityid:{
     id:'',
+    star:''
   },     
   setInfo(addInfo) {
     this.addInfo = addInfo
