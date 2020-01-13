@@ -1,0 +1,268 @@
+/* components/comment/comment.wxss */
+
+.comment {
+  background: #F3F5F5;
+}
+
+.activity-card {
+  min-height: 60px;
+  background: #F3F5F5;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.activity-card .activity-poster {
+  width: 38px;
+  min-height: 50px;
+  margin: 5px;
+  float: left;
+}
+
+.activity-card .activity-poster image {
+  width: 100%;
+  height: 100%;
+}
+
+.activity-card .activity-right {
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 5px;
+  min-height: 50px;
+}
+
+.activity-card .activity-right .activity-name {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.activity-card .activity-right .time-range {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  color: #262626;
+  font-size: 14px;
+}
+.feed-item {
+  margin-bottom: 10px;
+  padding: 15px 15px 10px 15px;
+  background-color: #fff;
+}
+
+.feed-head {
+  margin-bottom: 12px;
+  position: relative;
+  height: 36px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.feed-head .user-avatar {
+  border: 0;
+  left: 0;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-image: url(https://img.piaoniu.com/user/24177/avatar/1542510887446.jpg/70b5ff7fa5e5728d9a38e174a8054f38a181e845.jpg?imageView2/2/w/72/h/72/format/jpg/q/100);
+  width: 36px;
+  height: 36px;
+}
+
+.feed-head .head-info {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  margin-left: 42px;
+  height: 42px;
+}
+
+.feed-head .head-info .user-info {
+  display: flex;
+}
+
+.feed-head .head-info .username {
+  font-size: 15px;
+  margin-right: 4px;
+  color: #262626;
+  display: inline-block;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feed-head .head-info .level-tag {
+  display: inline-block;
+  position: relative;
+}
+
+.level-tag.level-tag-small .level {
+  background-color: #FDBF38;
+  border: 0;
+  height: 14px;
+  padding: 0 3px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.level-tag .level .v {
+  font-family: Athelas;
+  font-size: 20px;
+  position: relative;
+  font-weight: bold;
+  top: -5px;
+}
+
+.level-tag .level .lv {
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+}
+
+.level-tag.level-tag-small .level .text {
+  top: -1.5px;
+  transform: scale(0.75);
+  display: inline-block;
+  transform-origin: center;
+  font-size: 12px;
+}
+
+.feed-item .feed-content {
+  margin-right: 0px;
+  margin-left: 0;
+  zoom: 1;
+}
+
+.rank-row {
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.rank-row .text {
+  font-size: 12px;
+  color: #999;
+  float: left;
+}
+
+.rank-row .stars {
+  float: left;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  color: #262626;
+  font-size: 14px;
+}
+
+.stars view {
+  float: left;
+}
+
+.rank-row .stars view image {
+  width: 13px;
+  height: 13px;
+}
+
+.feed-review-content .content-row {
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.content-row .content {
+  word-break: break-all;
+  line-height: 1.4;
+  font-size: 15px;
+  color: #262626;
+}
+
+.feed-interaction {
+  margin-top: 15px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.feed-interaction .time {
+  float: left;
+  color: #999;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.feed-interaction .interaction-button {
+  float: right;
+  padding: 0 0 0 11px;
+  /* border: 1px solid #E6E6E6; */
+  border-radius: 14px;
+  margin-left: 10px;
+  width: 70px;
+  box-sizing: border-box;
+  position: relative;
+  height: 28px;
+}
+
+.feed-interaction .interaction-button .icon {
+  left: 11px;
+  position: absolute;
+  width: 24px;
+  height: 28px;
+  top: 50%;
+  margin-top: -14px;
+  margin-right: 3px;
+}
+
+.feed-interaction .interaction-button .num {
+  color: #999999;
+  font-size: 12px;
+  display: block;
+  margin-left: 28px;
+  text-align: left;
+  height: 26px;
+  line-height: 26px;
+}
+
+.feed-interaction .interaction-button {
+  float: right;
+  padding: 0 0 0 11px;
+  /* border: 1px solid #E6E6E6; */
+  border-radius: 14px;
+  margin-left: 10px;
+  width: 70px;
+  box-sizing: border-box;
+  position: relative;
+  height: 28px;
+}
+
+.feed-interaction .interaction-button .icon {
+  left: 11px;
+  position: absolute;
+  width: 24px;
+  height: 28px;
+  top: 50%;
+  margin-top: -14px;
+  margin-right: 3px;
+}
+
+.feed-interaction .interaction-button .num {
+  color: #999999;
+  font-size: 12px;
+  display: block;
+  margin-left: 28px;
+  text-align: left;
+  height: 26px;
+  line-height: 26px;
+}

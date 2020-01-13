@@ -1,0 +1,77 @@
+<view class="comment">
+  <view class="activity-card">
+    <view class="activity-poster">
+      <image src="{{commentList.activity.poster}}" />
+    </view>
+    <view class="activity-right">
+      <view class="activity-name" style="-webkit-viewne-clamp: 1;">{{commentList.activity.name}}</view>
+      <!---->
+      <view class="time-range">{{commentList.activity.timeRange}}</view>
+    </view>
+  </view>
+
+  <view class="list" wx:for="{{commentList.data}}">
+    <view class="feed-item" wx:key="{{item.subjectId}}">
+      <view class="feed-head">
+        <view class="user-avatar" 
+          style="background-image: url({{item.content.user.avatar}}); width: 36px; height: 36px;"></view>
+        <view class="head-info">
+          <view class="user-info">
+            <view class="username">{{item.content.user.userName}}</view>
+            <view class="level-tag level-tag-small">
+              <view class="level">
+                <text class="text">Lv{{item.content.user.level}}</text>
+              </view>
+            </view>
+          </view>
+          <!---->
+        </view>
+        <!---->
+      </view>
+      <view class="feed-content">
+        <view class="feed-review-content">
+          <view class="rank-row">
+            <view class="text">我评论：</view>
+            <view class="stars">
+              <view>
+                <image src="//static.piaoniu.com/m/static/img/starYellow.b0a4b5a.png" />
+              </view>
+              <view>
+                <image src="//static.piaoniu.com/m/static/img/starYellow.b0a4b5a.png" />
+              </view>
+              <view>
+                <image src="//static.piaoniu.com/m/static/img/starYellow.b0a4b5a.png" />
+              </view>
+              <view>
+                <image src="//static.piaoniu.com/m/static/img/starGrey.eefc1c0.png" />
+              </view>
+              <view>
+                <image src="//static.piaoniu.com/m/static/img/starGrey.eefc1c0.png" />
+              </view>
+            </view>
+          </view>
+          <view class="content-row">
+            <view class="content">
+              <text>{{item.content.content}}</text>
+            </view>
+          </view>
+          <!---->
+        </view>
+        <view class="feed-interaction border-top">
+          <view class="time">{{item.content.activity.addTime}}</view>
+          <view class="interaction-button interaction-comment">
+            <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA4CAYAAAC7UXvqAAADP0lEQVRoQ+1YTWgTQRR+b0MkFaUKYimIUOjBgxYFqYqiguhBWq8VKxRbN7O5BBQPvQgLnkTQU8lONqUX68+tB3OoB9GqaD2JXjwIgiKhB0EriInZeTJlCiVN0m5nN1I7cwr75n3vfe97O9l5COt84TrPHwyBf62gUcAooFkB00KaBdR2Nwpol1AT4P9XYHx8fGsQBHsQMaFZrFDuRBQkEokPIyMjP5s5NlWAc34GAB4CwLZQ0aPb/B0ABhhjjxtBNiTguu6mzs7OzwDQEV0+a0KaK5VKu13XrdTzbkiAc74PAN4pp5xlWc/WFH6NTkKIEwCQUe49jLH3oQj4vn9YCPFKOlmWdd62bdlKLVu+7w8IIR6o+Eds235tCLSs/ABgFDDvgGa/mRbaEC1UKBR6q9VqV6VSmcpms+XartGxx95C+Xz+HBFNAQAi4qN0Ot2/lICuvRUEbhHRNZX0PGOsvYaAlj12AoVC4UAQBE/klyoR3XQcZ3QpAV177ARksmNjY1va2tq2Dw8Pf6l3aurYW0JA86hv6m4IbIj/AdNCTSpg3oFcLtdrWdasKtIgY+xenC1Ti805vwAAk/K5EOJQJpN5E+pKyTnfAQBz8koMAL8A4HcTAtJ2v1QqjbquW12JaC6Xsy3LuoSI3UTUaN6UAoDNMv9UKrVzaGjoWygCcnM+n88RkbNSQot2InqOiKcYY3/q+XDOk4hYJKLTq8VERC+dTi9OJ5a5NR1sERF6nnc5kUgcAoCGkzki2gsABxV6kTHWVy9Bz/OKiHhW2b4i4gwALPuKVfYgCIJZx3EKiEiNCEcyG52YmEhVKpVpADguAxHRpOM4F5cG9TzvLiIOqmcz5XK5P5vNzq9WiVgJSHDOeTsiPiWi/SrYHcbYVdWKt4noivyNiG+J6CRj7Idu8gt4UYAsYvi+30FEL4ioWwoBANeV7Ya6N3xExGO2bcvDIZIVKQGZke/7XUKIlwDQWZNhybKso7Ztf4okcwUSOQFFokcIUQSAXSqOHBL3NZpv6hCKhYBMSN4FksnkwolDRNNR9Xwt2dgI6FQ1jK8hEKZacew1CsRR1TCYRoEw1Ypjr1EgjqqGwTQKhKlWHHv/Aqb0cVd/PFgvAAAAAElFTkSuQmCC"
+              class="icon comment-icon" />
+            <text class="num comment-num">{{item.content.replyCount}}</text>
+          </view>
+          <view class="interaction-button interaction-support">
+            <image src="https://static.piaoniu.com/m/static/img/icon-like-white.15350f3.png" class="icon support-icon" />
+            <text class="num support-num">{{item.content.likes}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    
+  </view>
+</view>
