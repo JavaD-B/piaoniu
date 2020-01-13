@@ -1,0 +1,18 @@
+<view
+  class="item-tags"
+  wx:if="{{group||tags.length>0}}"
+>
+  <view
+    class="tag-item yiqi"
+    wx:if="{{group}}"
+  >
+    <image class="icon-yiqi" src="/source/yiqi.png"/>
+  {{group.name}}
+  </view>
+  <view
+    class="tag-item"
+    wx:if="{{!ifshowComment}}"
+    wx:for="{{tags}}"
+    wx:key="id"
+  >{{item.name}}</view>
+</view>

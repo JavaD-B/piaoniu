@@ -63,23 +63,11 @@
         <text class="time">{{comment.content.activity.timeRange||comment.content.relativeActivities[0].timeRange}}</text>
       </view>
     </view>
-    <view
-      class="item-tags"
-      wx:if="{{comment.content.group}}"
-    >
-      <view
-        class="tag-item"
-      >
-        <image class="icon-yiqi" src="/source/yiqi.png"/>
-      {{comment.content.group.name}}
-      </view>
-      <view
-        class="tag-item"
-        wx:if="{{!ifshowComment}}"
-        wx:for="{{comment.content.tags}}"
-        wx:key="id"
-      >{{item.name}}</view>
-    </view>
+    <find-list-item-tag
+      group="{{comment.content.group}}"
+      ifshowComment="{{ifshowComment}}"
+      tags="{{comment.content.tags}}"
+    />
   </view>
   <view class="find-item-footer"
     wx:if="{{ifshowComment}}"

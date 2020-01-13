@@ -1,8 +1,14 @@
 <find-list-item
+  wx:if="{{comment.content.videos.length===0}}"
   comment="{{comment}}"
   ifshowComment="{{ifshowComment}}"
 >
 </find-list-item>
+<find-list-item-video
+  wx:else
+  comment="{{comment}}"
+  addtime="{{comment.content.addTime}}"
+/>
 <find-comment-list
   commentList="{{commentList}}"
   like="{{like}}"

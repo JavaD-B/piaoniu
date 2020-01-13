@@ -1,0 +1,43 @@
+<view>
+  <video
+    class="find-video"
+    src="{{comment.content.videos[0].url}}"
+    poster="{{comment.content.videos[0].poster}}"
+  ></video>
+<view class="find-video-wrap">
+  <view class="find-video-header">
+    <view class="header-left">
+      <image class="pic" src="{{comment.content.user.avatar}}"></image>
+      <view class="username">{{comment.content.user.userName}}</view>
+    </view>
+    <view class="follow">+ 关注</view>
+  </view>
+  <view class="find-video-content">
+    {{comment.content.content}}
+  </view>
+  <view class="find-video-footer">
+    <view class="addtime">发布于：{{time}}</view>
+    <view class="space"></view>
+    <view class="times">{{comment.content.views||"暂无"}}播放</view>
+  </view>
+  <find-list-item-tag
+    group="{{comment.content.group}}"
+    ifshowComment="{{ifshowComment}}"
+    tags="{{comment.content.tags}}"
+  />
+  <view class="find-video-operate">
+    <view class="icon-tab">
+      <view class="iconfont icon-dianzan"></view>
+      8
+    </view>
+    <view class="icon-tab">
+      <view class="iconfont icon-pinglun"></view>
+      8
+    </view>
+    <view class="icon-tab">
+      <view class="iconfont icon-fenxiang"></view>
+      8
+    </view>    
+  </view>
+</view>
+</view>

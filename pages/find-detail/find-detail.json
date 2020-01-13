@@ -2,7 +2,8 @@
   "usingComponents": {
     "find-list-item":"/components/find-list-item/find-list-item",
     "find-detail-comment":"/components/find-detail-comment/find-detail-comment",
-    "find-comment-list":"/components/find-comment-list/find-comment-list"
+    "find-comment-list":"/components/find-comment-list/find-comment-list",
+    "find-list-item-video":"/components/find-list-item-video/find-list-item-video"
   },
   "navigationBarTitleText": "圈圈详情"
 }

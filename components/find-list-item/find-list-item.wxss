@@ -120,32 +120,7 @@
   font-size: 22rpx;
 }
 
-.item-tags{
-  width: 100%;
-  display: flex;
-  margin-bottom: 20rpx;
-}
-.item-tags .tag-item{
-  border-radius: 25rpx;
-  height: 52rpx;
-  font-size: 24rpx;
-  line-height: 52rpx;
-  padding: 0 20rpx;
-  border: 2rpx solid #e6e6e6;
-  margin-right: 10rpx;
-}
-.item-tags .tag-item:first-of-type{
-  background-color: #fff1f4;
-  color: #ff276c;
-  border: none;
-}
-.add-bottom{
-  margin-bottom: 54rpx;
-}
-.icon-yiqi{
-  width: 24rpx;
-  height: 24rpx;
-}
+
 .item-detail{
   height: 100rpx;
   width: 100%;
