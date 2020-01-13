@@ -16,3 +16,4 @@
     <listshow wx:if="{{item.id==nowindex}}" tid="{{item.id}}" listdata="{{showlist}}" class="scroll"></listshow>
   </swiper-item>
 </swiper>
+ <!-- <image class="logo" src="/source/loading.gif" /> -->
