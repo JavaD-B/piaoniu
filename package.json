@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "swiper": "^5.2.1",
     "underscore": "^1.9.2"
   }
